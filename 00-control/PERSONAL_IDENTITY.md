@@ -1,7 +1,9 @@
 # PERSONAL_IDENTITY.md
 Last Updated: 2026-04
 Owner: Sarwan Singh
-
+## Internal Terminology
+lifeos = private AI operating repo
+engineering = public technical growth repo
 ---
 
 # 1. CORE IDENTITY
