@@ -1,5 +1,5 @@
 # NOW.md
-
+Last Updated: 2026-04-20
 ## Current Quarter Mission
 Rebuild health + Career jump + Marriage readiness
 
