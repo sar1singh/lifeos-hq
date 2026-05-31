@@ -1,5 +1,5 @@
 # NOW.md
-Last Updated: 2026-04-20
+Last Updated: 2026-05-24
 
 ---
 
@@ -16,16 +16,16 @@ Rebuild health + Career jump + Marriage readiness
 ---
 
 ## This Week Top 3
-1. Seed LifeOS-HQ fully
-2. 3 gym sessions
-3. Start Engineering Foundations roadmap
+1. Complete first Engineering Foundations study block
+2. Protect sleep and energy for daily study
+3. Keep 3 gym or movement sessions
 
 ---
 
 ## This Week Focus
-- Setup LifeOS-HQ
-- Resume baseline
-- Daily study streak
+- Big-O Complexity + Arrays/Hashing
+- Two Sum as the first problem
+- Daily study streak with no zero days
 - Reduce smoking
 - Sleep earlier by 1 hour
 
@@ -58,6 +58,6 @@ Rebuild health + Career jump + Marriage readiness
 
 ## If Lost, Do This Today
 1. Walk
-2. Study 20 min
+2. Study Big-O or Two Sum for 20 min
 3. Update NOW.md
 4. Sleep earlier

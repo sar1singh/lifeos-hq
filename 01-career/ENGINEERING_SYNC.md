@@ -1,20 +1,19 @@
 # ENGINEERING_SYNC.md
-Last Updated: 2026-04-20
+Last Updated: 2026-05-24
 
 ## Mission
-Use engineering repo to become interview-ready for 60–90+ LPA roles.
+Use Engineering Foundations to become interview-ready for 60-90+ LPA backend roles.
 
 ## Current Status
 Week: 1
 Stage: Foundation Build
 Interview Readiness: Low
-Momentum: Started
+Momentum: Restarted with a narrow first foundation
 
 ## Current Focus
-- DSA basics restart
-- System Design fundamentals
-- Node.js backend depth
-- AWS basics refresh
+- Big-O Complexity + Arrays/Hashing
+- First problems: Two Sum, Contains Duplicate, Valid Anagram
+- Practice path: `engineering-foundations/02-practice/dsa/arrays/`
 
 ## Targets
 Study Hours / Week: 10
@@ -26,6 +25,12 @@ Mock Interviews: 0
 - Family pressure
 - Sleep drift
 - Limited weekday time
+
+## This Week Execution Rule
+- Minimum: 30 minutes study daily
+- Good day: 60-90 minutes study
+- First action: study Big-O basics, then start Two Sum
+- Track execution in `engineering-foundations/00-control/DAILY_LOG.md`
 
 ## Next Review
 Sunday weekly review
