@@ -1,0 +1,274 @@
+{
+  "profile": {
+    "name": "Sarwan Singh",
+    "age": 36,
+    "dob": "1990-09-17",
+    "time_of_birth": "13:12:00 IST",
+    "place_of_birth": "Ghaziabad, Uttar Pradesh, India",
+    "ayanamsha": "Lahiri (Chitra Paksha) 23°43'36\"",
+    "role": "Lead Software Engineer",
+    "company": "EPAM Systems",
+    "mulank": 8,
+    "bhagyank": 9,
+    "net_worth_inr": 6000000,
+    "monthly_in_hand_inr": 220000,
+    "monthly_living_expenses_today_inr": 100000,
+    "monthly_sip_inr": 150000,
+    "lifestyle_inflation_pct": 9.0,
+    "dream_home_budget_inr": 25000000,
+    "liquid_freedom_corpus_inr": 45000000,
+    "total_sovereign_wealth_target_inr": 70000000,
+    "debt_inr": 0,
+    "current_weight_kg": 100,
+    "target_weight_90d_kg": 94
+  },
+  "kundli_and_astrology": {
+    "ascendant": {
+      "sign": "Sagittarius (Dhanu)",
+      "degree": "01°53'39\"",
+      "nakshatra": "Mula",
+      "pada": 1,
+      "lord": "Jupiter (Exalted)",
+      "element": "Dual Fire (Agni)",
+      "psychological_archetype": "The Philosophical Systems Builder. High-level conceptualization, broad horizon scanning, intolerance for corporate theater and superficial small talk."
+    },
+    "planetary_positions": [
+      { "planet": "Sun (Surya)", "sign": "Virgo (Kanya)", "degree": "00°26'28\"", "house": 10, "chalit_house": 10, "nakshatra": "Uttaraphalguni 2", "dignity": "Digbala (Directional Strength)", "navamsha_d9": "Capricorn", "real_life_trait": "Executive authority through precision engineering, data integrity, and architectural mastery." },
+      { "planet": "Moon (Chandra)", "sign": "Leo (Simha)", "degree": "09°47'34\"", "house": 9, "chalit_house": 9, "nakshatra": "Magha 3", "dignity": "Royal Pitri Sign", "navamsha_d9": "Gemini", "real_life_trait": "Sovereign mindset, ancestral pride, independent creator instincts, allergic to subordination." },
+      { "planet": "Mars (Mangal)", "sign": "Taurus (Vrishabha)", "degree": "13°43'28\"", "house": 6, "chalit_house": 6, "nakshatra": "Rohini 2", "dignity": "Vargottama (D1 & D9)", "navamsha_d9": "Taurus", "real_life_trait": "Shatru Hanta problem solver; relentless stamina in debugging, fighting obstacles, and heavy lifting." },
+      { "planet": "Mercury [R] (Budh)", "sign": "Leo (Simha)", "degree": "15°51'36\"", "house": 9, "chalit_house": 9, "nakshatra": "Purvaphalguni 1", "dignity": "Vargottama & Retrograde", "navamsha_d9": "Leo", "real_life_trait": "Reverse-engineering intellect; modular architectural synthesis; prone to mental over-analysis." },
+      { "planet": "Jupiter (Guru)", "sign": "Cancer (Karka)", "degree": "12°12'19\"", "house": 8, "chalit_house": 8, "nakshatra": "Pushya 3", "dignity": "Exalted (Uccha)", "navamsha_d9": "Libra", "real_life_trait": "Lagna Lord exalted in 8th: Crisis immunity, deep research depth, forensic mastery of code and hidden structures." },
+      { "planet": "Venus (Shukra)", "sign": "Leo (Simha)", "degree": "18°37'43\"", "house": 9, "chalit_house": 9, "nakshatra": "Purvaphalguni 2", "dignity": "Swa-Nakshatra (D1) / Neecha (D9)", "navamsha_d9": "Virgo (Debilitated)", "real_life_trait": "D1 gives cinematic visual flair. D9 Neecha produces hyper-analytical romantic scrutiny and marriage delay." },
+      { "planet": "Saturn [R] (Shani)", "sign": "Sagittarius (Dhanu)", "degree": "24°59'04\"", "house": 1, "chalit_house": 2, "nakshatra": "Purvashadha 4", "dignity": "Chesta Bala (Retrograde)", "navamsha_d9": "Scorpio", "real_life_trait": "Mulank 8 + Saturn in 1st/2nd Chalit: Enforced late-bloomer delay up to age 35-36; extreme capital conservatism." },
+      { "planet": "Rahu [R]", "sign": "Capricorn (Makara)", "degree": "10°59'43\"", "house": 2, "chalit_house": 2, "nakshatra": "Shravana 1", "dignity": "Earth Sign Focus", "navamsha_d9": "Aries", "real_life_trait": "Hunger for sovereign financial assets and independent wealth; temptation toward leverage traps." },
+      { "planet": "Ketu [R]", "sign": "Cancer (Karka)", "degree": "10°59'43\"", "house": 8, "chalit_house": 8, "nakshatra": "Pushya 3", "dignity": "Esoteric Depth", "navamsha_d9": "Libra", "real_life_trait": "Detachment from shallow societal goals; intuitive grasp of complex abstract and distributed systems." }
+    ],
+    "major_yogas": [
+      { "name": "Dharma-Karmadhipati Raja Yoga", "planets": "9th Lord Sun in 10th + 10th Lord Mercury in 9th", "impact": "Highest-tier institutional and technical consulting authority; career is tied to life mission." },
+      { "name": "Dual Vargottama Yoga", "planets": "Mars in Taurus + Mercury in Leo (D1 & D9 identical)", "impact": "Unbreakable combination of physical/technical endurance (Mars) and architectural communication (Mercury)." },
+      { "name": "Gaja Kesari Protective Influence", "planets": "Exalted Jupiter in Cancer casting aspect on 4th House (Pisces)", "impact": "Shields against catastrophic financial collapse; real estate protection; deep resilience." }
+    ],
+    "active_dasha_schedule": {
+      "mahadasha": "Moon (Chandra) — 2018-07-27 to 2028-07-27",
+      "antardasha": "Venus (Shukra) — 2026-05-27 to 2028-01-27",
+      "transit_multiplier": "Jupiter transiting Leo (9th House) directly over natal Moon, Mercury [R], and Venus throughout 2026-2027",
+      "upcoming_mahadasha": "Mars (Mangal) — 2028 to 2035 (7-Year High-Velocity Dominance Era)"
+    },
+    "manifestation_formula_alignment": {
+      "best_technique": "WOOP (Wish, Outcome, Obstacle, Plan) + Somatic Priming + Architectural Action Board",
+      "why_law_of_attraction_fails": "Saturn in 1st/Chalit 2nd + Mulank 8 governs physical Karma and cause-and-effect. Passive daydreaming and 'asking the universe' triggers Saturnian anxiety and stagnation.",
+      "how_kundli_aligns_with_science": "Leo Moon provides the ambitious vision; Virgo Sun provides engineering specs; Saturn requires confronting the physical obstacle; Taurus Mars Vargottama requires heavy physical lifting to unlock executive focus."
+    }
+  },
+  "cognitive_budget": {
+    "weekly_total_hours": 168,
+    "sleep_and_recovery_hours": 56,
+    "day_job_hours": 45,
+    "family_and_legal_admin_hours": 15,
+    "hygiene_and_commute_hours": 12,
+    "available_deep_work_hours": 40,
+    "actual_current_energy_hours": 18,
+    "intended_workload_hours": 94,
+    "overload_ratio": 5.2
+  },
+  "master_timeline": [
+    {
+      "phase_id": "past_1",
+      "name": "The Apprenticeship & Heavy Duty",
+      "period": "2018 - 2022",
+      "status": "COMPLETED",
+      "theme": "Slow compounding, heavy family load, building financial floor",
+      "real_life_impact": "Carried responsibilities alone; felt like moving backwards while peers married and bought property; built rare 68% savings rate and zero debt.",
+      "color": "slate"
+    },
+    {
+      "phase_id": "past_2",
+      "name": "The Solitary Strip-Down & Isolation",
+      "period": "2022 - May 2026",
+      "status": "COMPLETED",
+      "theme": "Mental detox, cutting superficial noise, deep solitary coding",
+      "real_life_impact": "Disillusioned with corporate ladders; ideated ThinkLate and Agent-OS; romantic life completely on pause; heavy introspection.",
+      "color": "amber"
+    },
+    {
+      "phase_id": "present",
+      "name": "The 36-Year Turning Point",
+      "period": "June 2026 - Jan 2027",
+      "status": "ACTIVE NOW",
+      "theme": "Saturn maturity unlocked (Sept 17, 2026), promotion push, health emergency",
+      "real_life_impact": "The 36-year invisible delay brake is released. Acute mental clutter from 10 open tabs. Urgent need to drop 100kg weight, fix 4 AM sleep, and submit Architect promotion.",
+      "color": "indigo"
+    },
+    {
+      "phase_id": "future_1",
+      "name": "The Matrimonial Harvest & Salary Jump",
+      "period": "Feb 2027 - Dec 2027",
+      "status": "UPCOMING",
+      "theme": "Peak marriage window, social warmth, new architect compensation",
+      "real_life_impact": "Active matrimonial drive starts Feb 2027. High mutual attraction and partner compatibility. Lock in 60-80 LPA compensation. Finalize life partner by end of 2027.",
+      "color": "emerald"
+    },
+    {
+      "phase_id": "future_2",
+      "name": "Family Base & Fallback Moat",
+      "period": "Late 2027 - 2028",
+      "status": "PLANNED",
+      "theme": "Phased construction for parents & sisters, personal independent floor",
+      "real_life_impact": "Build family home with personal floor. Zero rent. Gives permanent fallback safety net to take venture risks, funded by safe phased LAMF overdraft (capped at 25% LTV).",
+      "color": "blue"
+    },
+    {
+      "phase_id": "future_3",
+      "name": "The Enterprise Dominance Cycle",
+      "period": "July 2028 - 2035",
+      "status": "LONG TERM",
+      "theme": "7-Year explosive growth, commercial authority, consulting & media assets",
+      "real_life_impact": "High-energy commercial expansion. Transition from salaried lead to independent high-earning consultant, creator, or tech business founder.",
+      "color": "violet"
+    }
+  ],
+  "lamf_stress_test": {
+    "portfolio_value_inr": 6000000,
+    "max_bank_limit_inr": 2700000,
+    "safe_cap_25pct_inr": 1500000,
+    "requested_facility_inr": 2000000,
+    "interest_rate_pct": 10.0,
+    "scenarios": [
+      {
+        "market_movement": "+8% Bull",
+        "portfolio_inr": 6480000,
+        "drawn_inr": 1000000,
+        "ltv_pct": 15.4,
+        "status": "HEALTHY",
+        "margin_call": false
+      },
+      {
+        "market_movement": "-10% Correction",
+        "portfolio_inr": 5400000,
+        "drawn_inr": 1500000,
+        "ltv_pct": 27.7,
+        "status": "MANAGEABLE",
+        "margin_call": false
+      },
+      {
+        "market_movement": "-20% Bear",
+        "portfolio_inr": 4800000,
+        "drawn_inr": 2000000,
+        "ltv_pct": 41.6,
+        "status": "WARNING",
+        "margin_call": false
+      },
+      {
+        "market_movement": "-30% Crash",
+        "portfolio_inr": 4200000,
+        "drawn_inr": 2000000,
+        "ltv_pct": 47.6,
+        "status": "DANGER",
+        "margin_call": true
+      },
+      {
+        "market_movement": "-40% Black Swan",
+        "portfolio_inr": 3600000,
+        "drawn_inr": 2000000,
+        "ltv_pct": 55.5,
+        "status": "FORCED LIQUIDATION",
+        "margin_call": true
+      }
+    ]
+  },
+  "partner_matrix": {
+    "must_haves": [
+      "Calm, emotionally regulated, low-drama communication",
+      "Comfortable with complex Sikh household (Mother, Sister + child, legal case)",
+      "Independent career or strong personal passion",
+      "Debt-averse financial literacy; values wealth creation over luxury display",
+      "Age bracket: 29 to 34 with real-world emotional maturity"
+    ],
+    "deal_breakers": [
+      "Status-obsessed or addicted to social media validation",
+      "Demands immediate total severance from family",
+      "Passive-aggressive communication or silent treatment habit",
+      "Sees marriage as a rescue mission or financial bailout",
+      "Enables drinking, late-night escapism, or chaotic lifestyle"
+    ]
+  },
+  "three_active_slots_now": [
+    {
+      "slot": 1,
+      "title": "Biological Reboot",
+      "goal": "100 kg -> 94 kg, Sleep before 12:30 AM, Medical smoking cessation",
+      "priority": "CRITICAL"
+    },
+    {
+      "slot": 2,
+      "title": "EPAM Technical Architect Promotion",
+      "goal": "Dossier submission mid-Nov, panel reviews, salary ratification",
+      "priority": "HIGH PAYOFF"
+    },
+    {
+      "slot": 3,
+      "title": "Sister's Legal Case Silo",
+      "goal": "Written fee cap with specialist lawyer, 2-hour Saturday-only slot",
+      "priority": "DEFENSIVE"
+    }
+  ],
+  "dos": [
+    "Book complete medical blood panel & consult doctor for smoking cessation this week",
+    "Submit EPAM Technical Architect promotion dossier in mid-November window",
+    "Maintain strict ₹1.5L/mo SIP and build ₹5L cash reserve for 2027 wedding",
+    "Stage matrimonial photo portfolio and criteria deck in December 2026",
+    "Lock all sister legal discussions strictly to Saturdays 10 AM - 12 PM"
+  ],
+  "donts": [
+    "Never exceed 25% LTV (max ₹15L drawn) on your mutual fund overdraft",
+    "Don't pour capital into family house without written legal clearance on property title",
+    "Don't code new features for Agent-OS or create new repos/frameworks",
+    "Don't let perfectionism micro-analyze prospective partners; decide within 90-120 days",
+    "Don't drink alcohol on weeknights before work or court meetings; cap to 1x/fortnight"
+  ],
+  "scorecard_90d": [
+    {
+      "metric": "Body Weight",
+      "baseline": "100 kg",
+      "target": "<= 94 kg",
+      "status": "PENDING"
+    },
+    {
+      "metric": "Sleep Schedule",
+      "baseline": "4:00 AM - 5:00 AM",
+      "target": "In bed by 12:30 AM (5 nights/wk)",
+      "status": "PENDING"
+    },
+    {
+      "metric": "Smoking",
+      "baseline": "6-7/day",
+      "target": "<= 2/day (medical taper)",
+      "status": "PENDING"
+    },
+    {
+      "metric": "Architect Title",
+      "baseline": "Lead SE",
+      "target": "Dossier defended & title confirmed",
+      "status": "PENDING"
+    },
+    {
+      "metric": "Matrimonial Deck",
+      "baseline": "Empty",
+      "target": "Pro portraits + 1-page bio ready",
+      "status": "PENDING"
+    },
+    {
+      "metric": "Legal Retainer",
+      "baseline": "Open anxiety",
+      "target": "Fee cap signed + files digitized",
+      "status": "PENDING"
+    },
+    {
+      "metric": "Product #1 (Nivora)",
+      "baseline": "Unpublished",
+      "target": "Live Gumroad/Payhip URL",
+      "status": "PENDING"
+    }
+  ]
+}
+

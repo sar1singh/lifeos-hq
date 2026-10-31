@@ -32,6 +32,20 @@ Primary themes:
 
 # 3. CURRENT PROFILE SNAPSHOT
 
+## Geographical & Era Chronology
+- Early Adulthood / College Era (2009 – Early 2013):
+  * College: B.Tech years (2009–2013).
+  * Relationship: Soumi (2009 – Early 2013 | ~4 Years). Ended abruptly in B.Tech final year (Early 2013).
+- Early Career / Post-Breakup Transition (2013 – Sep 2016):
+  * First Job: Started in 2013 as GIS Engineer at Cyient (formerly Infotech Enterprises) immediately following the Soumi breakup.
+  * Formative career transition years leading up to the Gurgaon relocation in Sep 2016.
+- The Gurgaon Chapter (Sep 2016 – Early 2022 | ~6 Years):
+  * Relocated to Gurgaon in Sep 2016 following the 2014 Soumi rupture.
+  * Lived in Gurgaon for 6 years until the Sapna breakup in early 2022.
+  * Environmental Reality: Urban corporate isolation ("alone within crowds"). Chronic loneliness created relational vulnerability / scarcity mindset (over-attaching to initial warmth or positive conversational attention).
+  * The Sapna Relationship (Late 2018 – Early 2022) took place entirely within this Gurgaon context.
+  * Exited Gurgaon in 2022 following the final dissolution with Sapna.
+
 ## Personal
 - Name: Sarwan Singh
 - DOB: 17 Sept 1990
@@ -49,7 +63,7 @@ Primary themes:
 
 ## Income / Finance
 - In-hand: ~₹2.2L/month
-- SIP: ₹1.7L/month
+- SIP: ₹1.5L/month
 - Approx Net Worth: ₹60L
 - No debt
 - Uses credit cards responsibly, pays in full
@@ -86,7 +100,21 @@ Primary themes:
 
 # 5. CURRENT CONSTRAINTS
 
+## Relational Core Truth vs. Adaptive Persona
+- Adaptive Persona: Learned to live alone; highly functional solitary operator; self-reliant engineering and financial routines.
+- Core Latent Need: Explicitly acknowledged underlying requirement: *"Deep inside I do want a partner, a loving faithful, loyal partner."*
+- Scarcity Trap Vulnerability: Chronic isolation in large crowds created a vulnerability where basic conversational warmth or attention was over-valued, leading to hasty emotional investment.
+
+## Root Drivers & Foundational Trauma Mechanisms
+- The "Too Late / Too Poor" Wound (Sapna Era 2018–2022):
+  * Entered the Sapna relationship carrying unintegrated grief from Soumi (2014); emotional hesitation caused delayed commitment.
+  * By the time full commitment and shared dreaming were unlocked, relational momentum was already lost.
+  * Internalized failure narrative: Believed he lost Sapna due to being "too naive, too weak, and too poor" at late 20s/early 30s, failing the modern matrimonial expectation (financial stability, emotional maturity, settled status).
+  * Counter-Compensation Engine: This exact trauma fuels his current intense financial drive (₹6.5–7.5 Cr net worth goal, ₹1.5L/mo SIP, 60–90 LPA career benchmark, ThinkLate sovereignty)—an unconscious vow to never again be disqualified for being under-resourced or unestablished.
+
 ## Internal
+- Chronic Emotional Baseline: Continuous, unintegrated sadness and loneliness stemming from two major relationship dissolutions (Soumi, Sapna). Not episodic or restricted to late nights; permanently present and managed via cognitive suppression.
+- Work/Activity as Anesthetic: High-intensity architecture, video production, and YouTube research function as deliberate suppression mechanisms to keep internal quiet from surfacing.
 - Self-doubt
 - Broken consistency history
 - Fear due to knowledge gaps
@@ -110,7 +138,14 @@ Primary themes:
 - WFH isolation
 - Weak dating pipeline
 - Initial conversation hesitation
-- Prior heartbreak residue
+- Relationship Scar Tissue (Two major ruptures):
+  * Soumi (2009 – Early 2013, 4 yrs): College relationship during B.Tech. Ruptured in B.Tech final year (Early 2013); occurred simultaneously with career entry as GIS Engineer at Cyient/Infotech.
+  * Sapna (Late 2018 – Early 2022 | ~3.5 yrs):
+    - Late 2018: Started casually / fling.
+    - 2019–2020: Deepened into serious committed alliance (COVID era).
+    - 2021: Fracturing / prolonged breakdown phase.
+    - Early 2022: Final separation.
+    - Impact: Dismantled belief that lessons from Soumi provided immunity; prolonged unraveling left compound exhaustion and deep defense mechanisms.
 
 ## Career
 - DSA weak

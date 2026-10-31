@@ -9,7 +9,7 @@ Last Updated: 2026-04-20
 | Sleep | Poor | Flat | 4-5 AM sleep |
 | Smoking | High | Flat | 6-7/day |
 | Alcohol | High | Flat | 3-4x/week |
-| Finances | Strong | Up | SIP consistent |
+| Finances | Strong | Up | ₹60L NW; ₹7 Cr Total Freedom Target (Networth Blueprint locked in 04-wealth/) |
 | Marriage Readiness | Moderate-Low | Up | Will improve with health/career |
 | Confidence | Medium-Low | Up | Action improving |
 | Creator Brand | Dormant | Flat | Setup exists |

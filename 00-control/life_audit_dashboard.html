@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarwan Singh — Master Life Audit Dashboard</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    body {
+      background-color: #0b0f19;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #111827;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #374151;
+      border-radius: 3px;
+    }
+    .active-tab {
+      background-color: #1e293b;
+      color: #38bdf8;
+      border-bottom: 2px solid #38bdf8;
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8 custom-scrollbar">
+
+  <div class="max-w-7xl mx-auto space-y-6">
+
+    <!-- Top Navigation Header -->
+    <header class="flex flex-col md:flex-row md:items-center justify-between bg-slate-900 border border-slate-800 rounded-2xl p-6 gap-4 shadow-xl">
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">LIFE-OS CORE</span>
+          <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">AGE 36 • INFLECTION POINT</span>
+        </div>
+        <h1 class="text-2xl md:text-3xl font-extrabold text-white mt-2 tracking-tight">Sarwan Singh: Reality Audit & Strategy Cockpit</h1>
+        <p class="text-slate-400 text-sm mt-1">Lead Software Engineer • Mulank 8 • Single-Task Triage System • Q4 2026 – Q4 2027</p>
+      </div>
+      <div class="flex flex-wrap items-center gap-3">
+        <div class="bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700 text-center">
+          <div class="text-xs text-slate-400">Current Weight</div>
+          <div class="text-lg font-bold text-rose-400">100 kg <span class="text-xs text-slate-400 font-normal">(Goal: 94 kg)</span></div>
+        </div>
+        <div class="bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700 text-center">
+          <div class="text-xs text-slate-400">Net Worth</div>
+          <div class="text-lg font-bold text-emerald-400">₹60 Lakh <span class="text-xs text-emerald-500/80 font-normal">68% SIP</span></div>
+        </div>
+        <div class="bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700 text-center">
+          <div class="text-xs text-slate-400">Active Phase</div>
+          <div class="text-lg font-bold text-sky-400">Turning Point</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="flex overflow-x-auto border-b border-slate-800 bg-slate-900/60 rounded-xl p-1 gap-1 custom-scrollbar text-sm font-medium">
+      <button onclick="switchTab('cockpit')" id="tab-cockpit" class="tab-btn px-4 py-2.5 rounded-lg text-slate-300 hover:text-white transition whitespace-nowrap active-tab">1. Executive Summary</button>
+      <button onclick="switchTab('timeline')" id="tab-timeline" class="tab-btn px-4 py-2.5 rounded-lg text-slate-400 hover:text-white transition whitespace-nowrap">2. Past, Present & Future</button>
+      <button onclick="switchTab('kundli')" id="tab-kundli" class="tab-btn px-4 py-2.5 rounded-lg text-slate-400 hover:text-white transition whitespace-nowrap">3. Vedic Kundli & Astrology</button>
+      <button onclick="switchTab('manifest')" id="tab-manifest" class="tab-btn px-4 py-2.5 rounded-lg text-slate-400 hover:text-white transition whitespace-nowrap">4. Manifestation Engine</button>
+      <button onclick="switchTab('lamf')" id="tab-lamf" class="tab-btn px-4 py-2.5 rounded-lg text-slate-400 hover:text-white transition whitespace-nowrap">5. LAMF Loan Simulator</button>
+      <button onclick="switchTab('triage')" id="tab-triage" class="tab-btn px-4 py-2.5 rounded-lg text-slate-400 hover:text-white transition whitespace-nowrap">6. 3-Slot Cognitive Triage</button>
+      <button onclick="switchTab('partner')" id="tab-partner" class="tab-btn px-4 py-2.5 rounded-lg text-slate-400 hover:text-white transition whitespace-nowrap">7. Marriage & Partner Matrix</button>
+      <button onclick="switchTab('laws')" id="tab-laws" class="tab-btn px-4 py-2.5 rounded-lg text-slate-400 hover:text-white transition whitespace-nowrap">8. The 10 Laws</button>
+      <button onclick="switchTab('scorecard')" id="tab-scorecard" class="tab-btn px-4 py-2.5 rounded-lg text-slate-400 hover:text-white transition whitespace-nowrap">9. 90-Day Scorecard</button>
+    </nav>
+
+    <!-- TAB 1: EXECUTIVE SUMMARY -->
+    <section id="content-cockpit" class="tab-content space-y-6">
+      
+      <!-- Key Alert Banner -->
+      <div class="bg-gradient-to-r from-amber-950/40 via-amber-900/20 to-slate-900 border border-amber-600/30 rounded-2xl p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div class="flex items-start gap-3">
+          <div class="p-2.5 bg-amber-500/20 text-amber-400 rounded-xl text-xl font-bold">⚠️</div>
+          <div>
+            <h3 class="text-amber-200 font-bold text-base">The Core Reality Check: Cognitive Battery Overdrawn</h3>
+            <p class="text-slate-300 text-sm mt-0.5">You are trying to execute a <strong>94-hour intended workload</strong> across 7 repos and 3 channels on an exhausted <strong>18-hour biological battery</strong> (100 kg weight, 4 AM sleep, smoking, alcohol). Drop 7 projects, fix sleep, submit Architect promotion.</p>
+          </div>
+        </div>
+        <button onclick="switchTab('triage')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs uppercase tracking-wider transition self-end md:self-center shrink-0">View 3-Slot Triage</button>
+      </div>
+
+      <!-- Vital Metrics Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 relative overflow-hidden">
+          <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Financial Engine</div>
+          <div class="text-2xl font-black text-white mt-1">₹60.0 Lakhs</div>
+          <p class="text-xs text-slate-400 mt-1">Monthly In-Hand: ₹2.2L • SIP: ₹1.5L</p>
+          <div class="mt-3 flex items-center gap-2">
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-semibold">68.2% Savings Rate</span>
+            <span class="text-xs text-slate-400">Zero Debt</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 relative overflow-hidden">
+          <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Biological Alert</div>
+          <div class="text-2xl font-black text-rose-400 mt-1">100 kg</div>
+          <p class="text-xs text-slate-400 mt-1">Sleep: 4–5 AM • Smokes: 6-7/day</p>
+          <div class="mt-3 flex items-center gap-2">
+            <span class="text-xs px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 font-semibold">Target: ≤ 94 kg</span>
+            <span class="text-xs text-slate-400">Med-assisted taper</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 relative overflow-hidden">
+          <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Career Benchmark</div>
+          <div class="text-2xl font-black text-sky-400 mt-1">Architect Dossier</div>
+          <p class="text-xs text-slate-400 mt-1">Lead SE at EPAM • Team of 5</p>
+          <div class="mt-3 flex items-center gap-2">
+            <span class="text-xs px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 font-semibold">Submit: Mid-Nov 2026</span>
+            <span class="text-xs text-slate-400">Target: 60-80 LPA</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 relative overflow-hidden">
+          <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Matrimonial Portal</div>
+          <div class="text-2xl font-black text-indigo-400 mt-1">Feb 2027 Launch</div>
+          <p class="text-xs text-slate-400 mt-1">Age 36 threshold unlocked</p>
+          <div class="mt-3 flex items-center gap-2">
+            <span class="text-xs px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 font-semibold">Dec 2026: Profile Prep</span>
+            <span class="text-xs text-slate-400">Finalize: Dec 2027</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Strategic Insights Matrix -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <span class="text-emerald-400">✓</span> Your Systemic Superpowers (Keep Leaning In)
+          </h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Rare Financial Discipline:</strong> Amassed ₹60L with zero debt and 68% savings rate. You have an unmatched runway buffer compared to peers.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Deep Systems Architecture:</strong> Rare ability to deconstruct ambiguous domains (codebases, financial math, video pipelines) into deterministic specs.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Enduring Mechanical Stamina:</strong> High pain threshold for technical troubleshooting, forensic debugging, and complex system design.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <span class="text-rose-400">✗</span> Historical Failure Modes (Eliminate Immediately)
+          </h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-start gap-2.5">
+              <span class="text-rose-400 font-bold">•</span>
+              <span><strong>The Meta-Work Trap:</strong> Spending weeks building AI directors, memory graphs, and frameworks to avoid the vulnerability of real-world shipping.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-rose-400 font-bold">•</span>
+              <span><strong>The Night Escapism Loop:</strong> Using late-night alcohol, cigarettes, and YouTube to cope with daytime overwhelm, wrecking the next day's cognitive stamina.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-rose-400 font-bold">•</span>
+              <span><strong>Superhuman Planning Followed by Crash:</strong> Designing rigid 10-hour schedules, quitting after 1 bad day, and abandoning tracking for months.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TAB 2: PAST, PRESENT & FUTURE TIMELINE -->
+    <section id="content-timeline" class="tab-content hidden space-y-6">
+      
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-white mb-2">The Zero-Jargon Life Map: What It Means in Real Life</h2>
+        <p class="text-slate-400 text-sm mb-6">No planetary jargon. Here is why your past felt so heavy, why late 2026 feels chaotic, and exactly when life events unlock.</p>
+
+        <div class="relative border-l-2 border-slate-800 ml-4 space-y-8 pl-6">
+          
+          <!-- Phase 1 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-slate-600 border-4 border-slate-900"></div>
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-slate-700 text-slate-300">COMPLETED • 2018 – 2022</span>
+                <span class="text-xs text-slate-400">The Apprenticeship</span>
+              </div>
+              <h4 class="text-base font-bold text-white">The Heavy Burden & Solitary Building</h4>
+              <p class="text-slate-300 text-sm mt-1">You felt like you carried an unfair mountain on your shoulders. Romance was frozen or painful. You watched peers get married while you felt stuck. In reality, a "safety brake" was applied so you wouldn't enter a reckless early marriage or make bad financial gambles. You built your ₹60L floor here.</p>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-amber-500 border-4 border-slate-900"></div>
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-300">COMPLETED • 2022 – MAY 2026</span>
+                <span class="text-xs text-slate-400">The Solitary Strip-Down</span>
+              </div>
+              <h4 class="text-base font-bold text-white">The Mental Detox & Shedding Illusions</h4>
+              <p class="text-slate-300 text-sm mt-1">You cut off casual acquaintances, stayed in your room, and felt disillusioned with corporate life. You began creating ThinkLate and Agent-OS. This stripped away standard societal scripts and prepared you to be an autonomous builder.</p>
+            </div>
+          </div>
+
+          <!-- Phase 3 (NOW) -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-sky-400 border-4 border-slate-900 animate-pulse"></div>
+            <div class="bg-sky-950/30 border border-sky-500/40 rounded-xl p-5">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-sky-500/20 text-sky-300">ACTIVE RIGHT NOW • JUNE 2026 – JAN 2027</span>
+                <span class="text-xs text-sky-400 font-semibold">Age 36 Inflection Point</span>
+              </div>
+              <h4 class="text-base font-bold text-white">The Delay Brake Officially Releases</h4>
+              <p class="text-slate-300 text-sm mt-1">You crossed age 36 on Sept 17, 2026. The testing cycle is done; compounding begins. You feel friction because you are carrying old bad habits (100 kg weight, 4 AM sleep) into a high-leverage era. <strong>Mandatory actions:</strong> submit Architect dossier in mid-Nov; reset sleep; drop weight.</p>
+            </div>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-emerald-400 border-4 border-slate-900"></div>
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">UPCOMING • FEB 2027 – DEC 2027</span>
+                <span class="text-xs text-slate-400">The Harvest</span>
+              </div>
+              <h4 class="text-base font-bold text-white">The Golden Matrimonial & Salary Gateway</h4>
+              <p class="text-slate-300 text-sm mt-1">The single best window for marriage of your decade opens in February 2027. Social warmth and mutual attraction surge. Lock in the new Architect compensation at work. Evaluate candidates with the 80/20 rule and finalize your life partner by late 2027.</p>
+            </div>
+          </div>
+
+          <!-- Phase 5 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-indigo-400 border-4 border-slate-900"></div>
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300">PLANNED • LATE 2027 – 2028</span>
+                <span class="text-xs text-slate-400">The Foundation</span>
+              </div>
+              <h4 class="text-base font-bold text-white">Family Base & Zero-Rent Fallback Moat</h4>
+              <p class="text-slate-300 text-sm mt-1">Build the house for parents and sisters with your own independent floor. This eliminates rent and gives an ironclad fallback base to take venture risks. Funded by safe, phased LAMF overdraft capped at 25% LTV.</p>
+            </div>
+          </div>
+
+          <!-- Phase 6 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-violet-400 border-4 border-slate-900"></div>
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-5">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-violet-500/20 text-violet-300">LONG-TERM • JULY 2028 – 2035</span>
+                <span class="text-xs text-slate-400">Dominance Era</span>
+              </div>
+              <h4 class="text-base font-bold text-white">The 7-Year Commercial & Wealth Explosion</h4>
+              <p class="text-slate-300 text-sm mt-1">High-speed execution. You shift from corporate employee into an autonomous technical authority, independent media creator, and multi-crore asset owner.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TAB 3: VEDIC KUNDLI & ASTROLOGICAL BLUEPRINT -->
+    <section id="content-kundli" class="tab-content hidden space-y-6">
+      
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-6">
+        
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">VEDIC ASTRONOMICAL BLUEPRINT</span>
+            <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">SWISS EPHEMERIS RECONCILED</span>
+          </div>
+          <h2 class="text-xl md:text-2xl font-black text-white mt-2">Kundli Architecture, Signs & Planetary Harmonics</h2>
+          <p class="text-slate-400 text-sm mt-1">17 Sept 1990 • 13:12:00 IST • Ghaziabad, UP • Lahiri Ayanamsha (Chitra Paksha 23°43'36") • Mulank 8 (Saturn) • Bhagyank 9 (Mars)</p>
+        </div>
+
+        <!-- Astrological Core Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+            <div class="text-xs text-amber-400 font-semibold uppercase">Lagna (Ascendant)</div>
+            <div class="text-lg font-bold text-white mt-1">Sagittarius (Dhanu)</div>
+            <p class="text-xs text-slate-400 mt-0.5">01°53' • Mula 1 (Ketu Lord)</p>
+            <p class="text-xs text-slate-300 mt-2">Philosophical systems builder, macro vision, intolerance for triviality.</p>
+          </div>
+
+          <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+            <div class="text-xs text-amber-400 font-semibold uppercase">Moon Sign (Rashi)</div>
+            <div class="text-lg font-bold text-white mt-1">Leo (Simha) • 9th House</div>
+            <p class="text-xs text-slate-400 mt-0.5">09°47' • Magha 3 (Pitri Throne)</p>
+            <p class="text-xs text-slate-300 mt-2">Sovereign pride, creative storyteller, allergic to intellectual subordination.</p>
+          </div>
+
+          <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+            <div class="text-xs text-amber-400 font-semibold uppercase">Sun (10th House Digbala)</div>
+            <div class="text-lg font-bold text-white mt-1">Virgo (Kanya) 00°26'</div>
+            <p class="text-xs text-slate-400 mt-0.5">Uttaraphalguni 2 • Directional Strength</p>
+            <p class="text-xs text-slate-300 mt-2">Executive authority through engineering rigor, metrics, and documentation.</p>
+          </div>
+
+          <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+            <div class="text-xs text-amber-400 font-semibold uppercase">Lagnesha (Jupiter)</div>
+            <div class="text-lg font-bold text-white mt-1">Cancer (Karka) • Exalted</div>
+            <p class="text-xs text-slate-400 mt-0.5">12°12' (8th House) • Pushya 3</p>
+            <p class="text-xs text-slate-300 mt-2">Crisis immunity, forensic decompilation, deep research dominance.</p>
+          </div>
+        </div>
+
+        <!-- Full Planetary Positions Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm text-slate-300">
+            <thead class="bg-slate-800/90 text-xs uppercase text-slate-400 border-b border-slate-700">
+              <tr>
+                <th class="p-3">Celestial Body</th>
+                <th class="p-3">D1 Sign & House</th>
+                <th class="p-3">Degrees & Nakshatra</th>
+                <th class="p-3">Bhava Chalit</th>
+                <th class="p-3">Dignity / Special State</th>
+                <th class="p-3">D9 Navamsha</th>
+                <th class="p-3">Real-Life Psychological & Operational Trait</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-xs">
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">Ascendant (Lagna)</td>
+                <td class="p-3 text-amber-400 font-semibold">Sagittarius (1st)</td>
+                <td class="p-3">01°53'39" • Mula 1</td>
+                <td class="p-3">House 1</td>
+                <td class="p-3 text-emerald-400 font-semibold">Agni Lagna</td>
+                <td class="p-3">Aries</td>
+                <td class="p-3">Visionary architect, high conceptual range, deep sense of mission.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">Sun (Surya)</td>
+                <td class="p-3 text-amber-400 font-semibold">Virgo (10th)</td>
+                <td class="p-3">00°26'28" • Uttaraphalguni 2</td>
+                <td class="p-3">House 10</td>
+                <td class="p-3 text-sky-400 font-bold">Digbala (Directional)</td>
+                <td class="p-3">Capricorn</td>
+                <td class="p-3">Natural technical leader; demands precision, zero tolerance for fluff.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">Moon (Chandra)</td>
+                <td class="p-3 text-amber-400 font-semibold">Leo (9th)</td>
+                <td class="p-3">09°47'34" • Magha 3</td>
+                <td class="p-3">House 9</td>
+                <td class="p-3 text-purple-400 font-semibold">Royal Pitri Throne</td>
+                <td class="p-3">Gemini</td>
+                <td class="p-3">Autonomous creator; needs self-directed IP; high dignity and self-respect.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">Mars (Mangal)</td>
+                <td class="p-3 text-amber-400 font-semibold">Taurus (6th)</td>
+                <td class="p-3">13°43'28" • Rohini 2</td>
+                <td class="p-3">House 6</td>
+                <td class="p-3 text-emerald-400 font-bold">Vargottama (D1 & D9)</td>
+                <td class="p-3 text-emerald-400 font-bold">Taurus</td>
+                <td class="p-3">Shatru Hanta problem solver; relentless physical/debugging stamina.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">Mercury [R] (Budh)</td>
+                <td class="p-3 text-amber-400 font-semibold">Leo (9th)</td>
+                <td class="p-3">15°51'36" • Purvaphalguni 1</td>
+                <td class="p-3">House 9</td>
+                <td class="p-3 text-emerald-400 font-bold">Vargottama + Retrograde</td>
+                <td class="p-3 text-emerald-400 font-bold">Leo</td>
+                <td class="p-3">Reverse-engineering intellect; modular system synthesis; over-analyzing.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">Jupiter (Guru)</td>
+                <td class="p-3 text-amber-400 font-semibold">Cancer (8th)</td>
+                <td class="p-3">12°12'19" • Pushya 3</td>
+                <td class="p-3">House 8</td>
+                <td class="p-3 text-amber-300 font-black">EXALTED (Uccha)</td>
+                <td class="p-3">Libra</td>
+                <td class="p-3">Lagna Lord in highest exaltation: crisis immunity, deep structural wisdom.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">Venus (Shukra)</td>
+                <td class="p-3 text-amber-400 font-semibold">Leo (9th)</td>
+                <td class="p-3">18°37'43" • Purvaphalguni 2</td>
+                <td class="p-3">House 9</td>
+                <td class="p-3 text-indigo-400 font-semibold">Swa-Nakshatra (D1)</td>
+                <td class="p-3 text-rose-400 font-bold">Virgo (Neecha / Debilitated)</td>
+                <td class="p-3">D1 gives high visual taste. D9 Neecha causes extreme romantic hyper-scrutiny.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">Saturn [R] (Shani)</td>
+                <td class="p-3 text-amber-400 font-semibold">Sagittarius (1st)</td>
+                <td class="p-3">24°59'04" • Purvashadha 4</td>
+                <td class="p-3 text-rose-400 font-bold">House 2 (Chalit Shift)</td>
+                <td class="p-3 text-amber-400 font-semibold">Chesta Bala (Vakra)</td>
+                <td class="p-3">Scorpio</td>
+                <td class="p-3">Mulank 8 + Saturn in Chalit 2: Delayed public recognition to 36; rare savings.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">Rahu [R]</td>
+                <td class="p-3 text-amber-400 font-semibold">Capricorn (2nd)</td>
+                <td class="p-3">10°59'43" • Shravana 1</td>
+                <td class="p-3">House 2</td>
+                <td class="p-3 text-slate-400">Earth Placement</td>
+                <td class="p-3">Aries</td>
+                <td class="p-3">Intense hunger for capital sovereignty; danger of leverage traps (LAMF margin).</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">Ketu [R]</td>
+                <td class="p-3 text-amber-400 font-semibold">Cancer (8th)</td>
+                <td class="p-3">10°59'43" • Pushya 3</td>
+                <td class="p-3">House 8</td>
+                <td class="p-3 text-slate-400">Conjoined Exalted Guru</td>
+                <td class="p-3">Libra</td>
+                <td class="p-3">Detachment from orthodox corporate ladder; intuitive grasp of AI and code.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- The 3 Monumental Yogas -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+          <div class="bg-slate-800/50 border border-slate-700 p-4 rounded-xl">
+            <h4 class="text-amber-300 font-bold text-sm">1. Dharma-Karmadhipati Raja Yoga</h4>
+            <p class="text-xs text-slate-300 mt-1">9th Lord (Sun) in 10th House + 10th Lord (Mercury) in 9th House (Mutual Sign Exchange / Parivartana). Guarantees institutional authority and high reputation in systems engineering and consulting.</p>
+          </div>
+          <div class="bg-slate-800/50 border border-slate-700 p-4 rounded-xl">
+            <h4 class="text-emerald-300 font-bold text-sm">2. Dual Vargottama Yoga</h4>
+            <p class="text-xs text-slate-300 mt-1">Mars (Taurus) and Mercury (Leo) occupy the identical signs in both D1 (Physical) and D9 (Soul) harmonics. Gives an unbreakable synthesis between physical/debugging grit and architectural communication.</p>
+          </div>
+          <div class="bg-slate-800/50 border border-slate-700 p-4 rounded-xl">
+            <h4 class="text-sky-300 font-bold text-sm">3. Exalted Lagnesha in 8th (Guru)</h4>
+            <p class="text-xs text-slate-300 mt-1">Lagna lord Jupiter is exalted in Pushya Nakshatra in the 8th house. Shields your health and money against catastrophic collapse; gives an uncanny instinct for uncovering hidden system flaws.</p>
+          </div>
+        </div>
+
+        <!-- Vedic Prediction & Dasha Forecast Box -->
+        <div class="bg-indigo-950/30 border border-indigo-500/30 rounded-xl p-5 space-y-3">
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <span>🔮</span> The Vedic Prediction Roadmap (2026 – 2035)
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-300">
+            <div class="bg-slate-900/80 p-3 rounded-lg border border-slate-800">
+              <span class="text-sky-400 font-bold block mb-1">NOW: Moon–Venus (May 2026 – Jan 2028)</span>
+              Active Antardasha lord Venus rules 11th house of gains and sits in 9th house of fortune. Jupiter in Leo transits over your natal Moon and Venus. This is the **peak financial realization and matrimonial alignment of the decade.**
+            </div>
+            <div class="bg-slate-900/80 p-3 rounded-lg border border-slate-800">
+              <span class="text-emerald-400 font-bold block mb-1">FEB 2027: The Matrimonial Window</span>
+              Saturn delayed marriage up to age 35–36 to protect you from an immature union. At 36.5, Saturn’s karmic condition is satisfied. Post-Sankranti 2027, transit Jupiter directly activates Venus. Commit decisively by late 2027.
+            </div>
+            <div class="bg-slate-900/80 p-3 rounded-lg border border-slate-800">
+              <span class="text-violet-400 font-bold block mb-1">2028–2035: Mars Mahadasha Dominance</span>
+              A 7-year cycle of high-speed execution. Mars is Vargottama 6th lord in 6th house (Shatru Hanta). You transition from salaried corporate employee into an autonomous technical authority and independent multi-crore asset builder.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TAB 4: MANIFESTATION PSYCHOLOGY & FORMULAS -->
+    <section id="content-manifest" class="tab-content hidden space-y-6">
+      
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-6">
+        
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">NEUROSCIENCE & ASTROLOGY SYNTHESIS</span>
+            <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">SCIENTIFIC ACTION BOARDS</span>
+          </div>
+          <h2 class="text-xl md:text-2xl font-black text-white mt-2">Manifestation Psychology: Which Formula Works For Your Kundli?</h2>
+          <p class="text-slate-400 text-sm mt-1">Deconstructing the Law of Attraction, visualization, and mentors through cognitive psychology, the Reticular Activating System (RAS), and your Saturnian Kundli architecture.</p>
+        </div>
+
+        <!-- The 4 Camps Comparison Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm text-slate-300">
+            <thead class="bg-slate-800/90 text-xs uppercase text-slate-400 border-b border-slate-700">
+              <tr>
+                <th class="p-3">Manifestation School</th>
+                <th class="p-3">Core Teaching</th>
+                <th class="p-3">Does It Work for Your Kundli?</th>
+                <th class="p-3">The Forensic Verdict for Sarwan</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-xs">
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">The Mystics (The Secret, 3-6-9, Neville Goddard)</td>
+                <td class="p-3">"Vibrate at the frequency of wealth; assume the wish fulfilled; universe delivers."</td>
+                <td class="p-3 text-rose-400 font-bold">100% FAILS YOU</td>
+                <td class="p-3">Mulank 8 + Saturn in 1st/Chalit 2nd governs physical Karma. Daydreaming releases cheap dopamine and leads to execution collapse.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">The Quantum Gurus (Joe Dispenza, Bob Proctor)</td>
+                <td class="p-3">"Collapse wave functions in the quantum field through 60-min meditative states."</td>
+                <td class="p-3 text-amber-400 font-bold">PARTIAL (15%)</td>
+                <td class="p-3">Calms your overactive Mercury [R], but quantum buzzwords trigger your Virgo Sun analytical skepticism.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-3 font-bold text-white">The State Drill-Sergeants (Tony Robbins)</td>
+                <td class="p-3">"Peak physiology, screaming incantations, cold plunges, burning your boats."</td>
+                <td class="p-3 text-sky-400 font-bold">MODERATE (50%)</td>
+                <td class="p-3">Physical movement resets nervous system, but emotional screaming without architectural design fades quickly.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40 bg-emerald-950/20">
+                <td class="p-3 font-black text-emerald-300">The Cognitive Neuroscientists (Dr. Oettingen & Dr. Swart)</td>
+                <td class="p-3">"Reticular Activating System (RAS) value-tagging + WOOP Mental Contrasting + Action Boards."</td>
+                <td class="p-3 text-emerald-400 font-black">100% PERFECT MATCH</td>
+                <td class="p-3 font-semibold text-emerald-200">Embraces obstacles (Saturn), visualizes structural blueprints (Leo Moon/Virgo Sun), and drives physical proof (Taurus Mars).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- The 4-Part Manifestation Formula That Works For You -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div class="bg-slate-800/60 border border-slate-700 p-5 rounded-2xl space-y-3">
+            <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+              <span>🎯</span> Formula 1: The WOOP Protocol (Dr. Gabriele Oettingen)
+            </div>
+            <p class="text-xs text-slate-300">NYU clinical research proves positive visualization *lowers* blood pressure and fools the brain into thinking it already won. You must use <strong>Mental Contrasting</strong>:</p>
+            <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs text-slate-300">
+              <div><strong class="text-white">Wish (W):</strong> EPAM Technical Architect title + 94 kg body weight.</div>
+              <div><strong class="text-white">Outcome (O):</strong> Visualizing the compensation sheet and agile physical stamina.</div>
+              <div><strong class="text-rose-400">Obstacle (O):</strong> 4:00 AM sleep, building meta-tools instead of writing the promotion deck, nicotine cravings.</div>
+              <div><strong class="text-emerald-400">Plan (P):</strong> IF it is 11:30 PM, THEN phone leaves bedroom. IF I feel urge to code meta-tools, THEN write 2 pages of Architect dossier.</div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/60 border border-slate-700 p-5 rounded-2xl space-y-3">
+            <div class="flex items-center gap-2 text-sky-400 font-bold text-sm">
+              <span>🧠</span> Formula 2: Reticular Activating System (RAS) Action Board
+            </div>
+            <p class="text-xs text-slate-300">Your brain's RAS filter deletes 99% of sensory inputs. A Pinterest vision board fails because it's vague. You need an <strong>Architectural Action Board</strong> (Dr. Tara Swart):</p>
+            <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs text-slate-300">
+              <div><strong class="text-white">Visual Value-Tagging:</strong> Place the 3 Active Slots in your direct field of view (monitor wallpaper or physical desk print).</div>
+              <div><strong class="text-white">System Architecture:</strong> Include exact system diagrams, LTV debt gauge (<25%), and date milestones.</div>
+              <div><strong class="text-white">Why It Works:</strong> Programs your brain to subconsciously hunt for technical sponsors, partner alignment, and gym time.</div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/60 border border-slate-700 p-5 rounded-2xl space-y-3">
+            <div class="flex items-center gap-2 text-amber-400 font-bold text-sm">
+              <span>⚡</span> Formula 3: Somatic Action Priming (Mars Vargottama)
+            </div>
+            <p class="text-xs text-slate-300">Mars is Vargottama in your 6th house of physical combat. Your mind cannot out-think a tired nervous system. <strong>The body must lead the mind:</strong></p>
+            <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs text-slate-300">
+              <div><strong class="text-white">The Rule:</strong> Never brainstorm, plan, or visualize sitting down in an exhausted state.</div>
+              <div><strong class="text-white">Somatic Reset:</strong> 45 minutes of heavy compound lifting (deadlifts, squats, overhead press) floods your brain with dopamine and BDNF.</div>
+              <div><strong class="text-white">Result:</strong> Visualizing right after physical exertion immediately breaks mental loops and executive paralysis.</div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/60 border border-slate-700 p-5 rounded-2xl space-y-3">
+            <div class="flex items-center gap-2 text-purple-400 font-bold text-sm">
+              <span>👑</span> Formula 4: Identity Stepping (Leo Moon + Sun Digbala)
+            </div>
+            <p class="text-xs text-slate-300">Neville Goddard said "Live in the end." In cognitive neuroscience, this is <strong>Identity-Based Action</strong> (James Clear):</p>
+            <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs text-slate-300">
+              <div><strong class="text-white">The Mindset:</strong> Stop saying "I am trying to become an Architect and lose weight."</div>
+              <div><strong class="text-white">The Question:</strong> "What does a 36-year-old Principal Systems Architect weighing 90 kg with ₹60L net worth do at 11:00 PM?"</div>
+              <div><strong class="text-white">The Action:</strong> He closes YouTube, drinks water, and sleeps. Behave as the identity, and physical reality must catch up.</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TAB 5: LAMF LOAN & HOUSE SIMULATOR -->
+    <section id="content-lamf" class="tab-content hidden space-y-6">
+      
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-white mb-2">Interactive LAMF Overdraft (OD) & Margin-Call Simulator</h2>
+        <p class="text-slate-400 text-sm mb-6">Test how market crashes affect your ₹60L mutual fund portfolio when drawing a Loan Against Mutual Funds (LAMF) for house construction.</p>
+
+        <!-- Controls -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-800/40 p-5 rounded-xl border border-slate-700">
+          <div>
+            <div class="flex justify-between text-sm font-semibold mb-2">
+              <span class="text-slate-300">Pledged Mutual Fund Value</span>
+              <span class="text-emerald-400 font-bold" id="portfolio-val-display">₹60,00,000</span>
+            </div>
+            <input type="range" id="portfolio-slider" min="4000000" max="10000000" step="500000" value="6000000" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-emerald-500" oninput="calculateLAMF()">
+            <div class="flex justify-between text-xs text-slate-500 mt-1">
+              <span>₹40 Lakh</span>
+              <span>₹60 Lakh (Current)</span>
+              <span>₹1 Crore</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-sm font-semibold mb-2">
+              <span class="text-slate-300">Loan Amount Drawn (OD)</span>
+              <span class="text-sky-400 font-bold" id="loan-val-display">₹20,00,000</span>
+            </div>
+            <input type="range" id="loan-slider" min="500000" max="3000000" step="100000" value="2000000" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-500" oninput="calculateLAMF()">
+            <div class="flex justify-between text-xs text-slate-500 mt-1">
+              <span>₹5 Lakh</span>
+              <span>₹15 Lakh (Safe Cap)</span>
+              <span>₹30 Lakh</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Stress Test Results -->
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+          <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 text-center">
+            <div class="text-xs font-semibold text-slate-400 uppercase">Effective LTV Ratio</div>
+            <div class="text-3xl font-black mt-1" id="ltv-display">33.3%</div>
+            <p class="text-xs mt-1" id="ltv-status-badge">Safe Zone (< 35%)</p>
+          </div>
+
+          <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 text-center">
+            <div class="text-xs font-semibold text-slate-400 uppercase">Safe Draw Limit (25% Rule)</div>
+            <div class="text-3xl font-black text-emerald-400 mt-1" id="safe-limit-display">₹15,00,000</div>
+            <p class="text-xs text-slate-400 mt-1">Never exceed to avoid margin call</p>
+          </div>
+
+          <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 text-center">
+            <div class="text-xs font-semibold text-slate-400 uppercase">Crash Tolerance Before Margin Call</div>
+            <div class="text-3xl font-black text-amber-400 mt-1" id="crash-tolerance-display">-33.3%</div>
+            <p class="text-xs text-slate-400 mt-1">Market drop needed to hit 50% LTV</p>
+          </div>
+
+        </div>
+
+        <!-- Stress Table -->
+        <div class="mt-6 overflow-x-auto">
+          <table class="w-full text-left text-sm text-slate-300">
+            <thead class="bg-slate-800/80 text-xs uppercase text-slate-400 border-b border-slate-700">
+              <tr>
+                <th class="p-3">Market Drop Scenario</th>
+                <th class="p-3">Portfolio Value</th>
+                <th class="p-3">Drawn Debt</th>
+                <th class="p-3">New LTV</th>
+                <th class="p-3">Bank Action / Risk Verdict</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800" id="stress-table-body">
+              <!-- Dynamically Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Strategy Box for House Base -->
+        <div class="mt-6 bg-indigo-950/30 border border-indigo-500/30 rounded-xl p-5">
+          <h4 class="text-indigo-300 font-bold text-sm">💡 The Family House & Fallback Moat Rules:</h4>
+          <ul class="text-xs text-slate-300 space-y-1.5 mt-2">
+            <li>• <strong>Permanent Safety Net:</strong> An independent floor gives zero rent, giving you an infinite runway to take digital/creator business risks.</li>
+            <li>• <strong>Sister's Legal Case Firebreak:</strong> Confirm with her lawyer that the plot and building title cannot be attached in her court proceedings before spending capital.</li>
+            <li>• <strong>The Phased OD Rule:</strong> Draw ₹3 Lakhs for a vendor bill $\rightarrow$ pay it down with your monthly ₹1.5L SIP surplus $\rightarrow$ draw next tranche. Never draw a lump sum.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TAB 4: 3-SLOT COGNITIVE TRIAGE -->
+    <section id="content-triage" class="tab-content hidden space-y-6">
+      
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-white mb-2">Cognitive Load Triage: The Rule of 3 Active Fronts</h2>
+        <p class="text-slate-400 text-sm mb-6">Why you feel overwhelmed: You have 94 hours of intended projects competing for 18 hours of weekly cognitive energy. Here is the lockdown triage.</p>
+
+        <!-- The 3 Active Fronts -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          
+          <div class="bg-slate-800/80 border-2 border-emerald-500/60 rounded-2xl p-5 space-y-3 relative overflow-hidden">
+            <span class="px-2.5 py-0.5 text-xs font-bold rounded-full bg-emerald-500/20 text-emerald-300 uppercase">ACTIVE SLOT 1 • CRITICAL</span>
+            <h3 class="text-lg font-bold text-white">Biological Reboot</h3>
+            <p class="text-xs text-slate-300">100 kg is suffocating your daily stamina. Without energy, no other project can survive.</p>
+            <div class="bg-slate-900/80 p-3 rounded-lg text-xs space-y-1 border border-slate-800">
+              <div class="text-emerald-400 font-semibold">• Goal: 100 kg → 94 kg by Jan 31</div>
+              <div class="text-slate-300">• In bed by 12:30 AM (5 nights/wk)</div>
+              <div class="text-slate-300">• Physician-assisted smoking taper</div>
+              <div class="text-slate-300">• 3x compound lifting sessions/wk</div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/80 border-2 border-sky-500/60 rounded-2xl p-5 space-y-3 relative overflow-hidden">
+            <span class="px-2.5 py-0.5 text-xs font-bold rounded-full bg-sky-500/20 text-sky-300 uppercase">ACTIVE SLOT 2 • HIGH ROI</span>
+            <h3 class="text-lg font-bold text-white">Architect Promotion</h3>
+            <p class="text-xs text-slate-300">Lock in the EPAM Technical Architect title internally first. Jump to 60-80 LPA bracket.</p>
+            <div class="bg-slate-900/80 p-3 rounded-lg text-xs space-y-1 border border-slate-800">
+              <div class="text-sky-400 font-semibold">• Submit dossier mid-Nov 2026</div>
+              <div class="text-slate-300">• Highlight AI talk, cost & scale</div>
+              <div class="text-slate-300">• Panel defense late Nov - mid Dec</div>
+              <div class="text-slate-300">• Ratify compensation by Dec 31</div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/80 border-2 border-amber-500/60 rounded-2xl p-5 space-y-3 relative overflow-hidden">
+            <span class="px-2.5 py-0.5 text-xs font-bold rounded-full bg-amber-500/20 text-amber-300 uppercase">ACTIVE SLOT 3 • DEFENSIVE</span>
+            <h3 class="text-lg font-bold text-white">Sister's Case Containment</h3>
+            <p class="text-xs text-slate-300">Protect family sanity without letting court anxiety bleed into your weeknights.</p>
+            <div class="bg-slate-900/80 p-3 rounded-lg text-xs space-y-1 border border-slate-800">
+              <div class="text-amber-400 font-semibold">• Saturday only (10 AM - 12 PM)</div>
+              <div class="text-slate-300">• Hire specialist with fixed fee cap</div>
+              <div class="text-slate-300">• Digitize all filings into one Drive</div>
+              <div class="text-slate-300">• Zero weekday legal debating</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- The 7 Parked/Frozen Projects -->
+        <div class="mt-8 bg-slate-800/30 border border-slate-800 rounded-xl p-5">
+          <div class="flex items-center justify-between mb-3">
+            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider">⏸️ Parked / Frozen Projects (Zero Guilt • Revisit Q2 2027)</h4>
+            <span class="text-xs text-slate-500">7 Projects Isolated</span>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+            <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 text-slate-400">
+              <span class="text-rose-400 font-bold block">FAANG L5 DSA Grind</span>
+              <span>Parked. Focus on Architect first.</span>
+            </div>
+            <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 text-slate-400">
+              <span class="text-rose-400 font-bold block">Agent-OS Code</span>
+              <span>Freeze new code. Use as tool only.</span>
+            </div>
+            <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 text-slate-400">
+              <span class="text-rose-400 font-bold block">Off-Script Channel</span>
+              <span>Leisure only. No production gates.</span>
+            </div>
+            <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 text-slate-400">
+              <span class="text-rose-400 font-bold block">PaisaVault App Code</span>
+              <span>Parked. Maintain SIPs on auto.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TAB 5: MARRIAGE & PARTNER MATRIX -->
+    <section id="content-partner" class="tab-content hidden space-y-6">
+      
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-white mb-2">Matrimonial Strategy & Partner Compatibility Matrix</h2>
+        <p class="text-slate-400 text-sm mb-6">Launch Date: <strong>February 2027</strong>. Prepare profile and portraits in December 2026. Filter candidates ruthlessly against real compatibility, not romantic perfection.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div class="bg-emerald-950/20 border border-emerald-500/30 rounded-2xl p-5 space-y-4">
+            <h3 class="text-base font-bold text-emerald-300 flex items-center gap-2">
+              <span>💎</span> 5 Mandatory Green Flags (Must Haves)
+            </h3>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 font-bold">1.</span>
+                <span><strong>Calm Emotional Regulation:</strong> Speaks directly when upset; does not resort to passive-aggressive sulking, tantrums, or testing your reactions.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 font-bold">2.</span>
+                <span><strong>Complex Family Acceptance:</strong> Comfortable with multi-generational Sikh household (Mother, Sister + child, legal context).</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 font-bold">3.</span>
+                <span><strong>Independent Passion / Career:</strong> Has her own goals; respects your multi-hour solitary deep-work blocks without feeling abandoned.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 font-bold">4.</span>
+                <span><strong>Debt-Averse Financial Realism:</strong> Values savings, investments, and quiet wealth over conspicuous designer spending and social flex.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 font-bold">5.</span>
+                <span><strong>Age Bracket 29–34 with Resilience:</strong> Has navigated adult difficulties and possesses realistic, mature expectations of marriage.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-rose-950/20 border border-rose-500/30 rounded-2xl p-5 space-y-4">
+            <h3 class="text-base font-bold text-rose-300 flex items-center gap-2">
+              <span>🛑</span> 5 Lethal Red Flags (Disqualify Within 2 Dates)
+            </h3>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-400 font-bold">1.</span>
+                <span><strong>Status Display Vampire:</strong> Obsessed with luxury branding, Instagram appearances, and keeping up with high-spending peers.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-400 font-bold">2.</span>
+                <span><strong>Immediate Severance Ultimatum:</strong> Demands complete immediate alienation from your family or shows contempt toward existing members.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-400 font-bold">3.</span>
+                <span><strong>The Rescue Project:</strong> Chaotic personal life, heavy debt, or victim mindset looking for a financially secure engineer to fix her life.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-400 font-bold">4.</span>
+                <span><strong>Substance & Escapism Enabler:</strong> Enjoys heavy drinking, late nights, and partying, which will re-trigger your worst health loops.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-400 font-bold">5.</span>
+                <span><strong>The Silent-Treatment Habit:</strong> Punishes disagreement with days of silence instead of having a rational 15-minute adult discussion.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="mt-6 bg-slate-800/40 border border-slate-700 rounded-xl p-4 text-xs text-slate-400">
+          <strong>The 80/20 Commitment Law:</strong> If a woman satisfies 80% of core character, emotional stability, mutual attraction, and family alignment, <strong>commit decisively within 90 to 120 days.</strong> Do not allow your perfectionism to search for impossible 100% fantasy matches.
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TAB 6: THE 10 NON-NEGOTIABLE LAWS -->
+    <section id="content-laws" class="tab-content hidden space-y-6">
+      
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-white mb-2">The 10 Non-Negotiable Operational Laws</h2>
+        <p class="text-slate-400 text-sm mb-6">Guardrails for your capital, career, health, and family legal obligations over the next 12 months.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div class="space-y-3">
+            <h3 class="text-sm font-bold text-emerald-400 uppercase tracking-wider">The 5 Absolute "DOs"</h3>
+            
+            <div class="bg-slate-800/60 border border-emerald-500/30 p-4 rounded-xl text-xs space-y-1">
+              <div class="font-bold text-white">1. Biological Reboot (100 kg → 94 kg)</div>
+              <div class="text-slate-300">Book full blood panel this week. Bed by 12:30 AM. Consult physician for nicotine patch/gum taper. 3x lifting/wk.</div>
+            </div>
+
+            <div class="bg-slate-800/60 border border-emerald-500/30 p-4 rounded-xl text-xs space-y-1">
+              <div class="font-bold text-white">2. Submit EPAM Architect Dossier (Mid-Nov)</div>
+              <div class="text-slate-300">Package system cost savings, modular architecture, and AI talk. Ratify promotion and 60-80 LPA salary by year-end.</div>
+            </div>
+
+            <div class="bg-slate-800/60 border border-emerald-500/30 p-4 rounded-xl text-xs space-y-1">
+              <div class="font-bold text-white">3. Matrimonial Campaign Staging (Dec 2026)</div>
+              <div class="text-slate-300">Hire pro photographer for clean portraits. Write transparent 1-page bio. Launch active search in Feb 2027.</div>
+            </div>
+
+            <div class="bg-slate-800/60 border border-emerald-500/30 p-4 rounded-xl text-xs space-y-1">
+              <div class="font-bold text-white">4. Maintain ₹1.5L SIP + ₹5L Wedding Reserve</div>
+              <div class="text-slate-300">Never interrupt the ₹1.5L SIP. Build a separate liquid ₹5L cash reserve for wedding and transition expenses.</div>
+            </div>
+
+            <div class="bg-slate-800/60 border border-emerald-500/30 p-4 rounded-xl text-xs space-y-1">
+              <div class="font-bold text-white">5. Professionalize Sister's Case (Saturday Slot)</div>
+              <div class="text-slate-300">Sign fixed-fee stage retainer with specialist lawyer. Digitize all papers. Contain legal talk strictly to Saturdays.</div>
+            </div>
+
+          </div>
+
+          <div class="space-y-3">
+            <h3 class="text-sm font-bold text-rose-400 uppercase tracking-wider">The 5 Absolute "DON'Ts"</h3>
+            
+            <div class="bg-slate-800/60 border border-rose-500/30 p-4 rounded-xl text-xs space-y-1">
+              <div class="font-bold text-white">1. Never Exceed 25% LTV on Mutual Fund Overdraft</div>
+              <div class="text-slate-300">Cap total drawn debt at ₹15 Lakhs max on ₹60L portfolio. Zero lump-sum draws. Zero margin trading or F&O.</div>
+            </div>
+
+            <div class="bg-slate-800/60 border border-rose-500/30 p-4 rounded-xl text-xs space-y-1">
+              <div class="font-bold text-white">2. Don't Build House Without Legal Firebreak</div>
+              <div class="text-slate-300">Get written confirmation from sister's lawyer that the property title cannot be attached in court before spending ₹1.</div>
+            </div>
+
+            <div class="bg-slate-800/60 border border-rose-500/30 p-4 rounded-xl text-xs space-y-1">
+              <div class="font-bold text-white">3. Don't Write New Code for Agent-OS</div>
+              <div class="text-slate-300">Freeze development on Agent-OS and scaffolding new repos. Use only what is already operational.</div>
+            </div>
+
+            <div class="bg-slate-800/60 border border-rose-500/30 p-4 rounded-xl text-xs space-y-1">
+              <div class="font-bold text-white">4. Don't Micro-Analyze Partners Looking for Flaws</div>
+              <div class="text-slate-300">Disable your perfectionist prosecutor mode. If core values match, decide within 90–120 days.</div>
+            </div>
+
+            <div class="bg-slate-800/60 border border-rose-500/30 p-4 rounded-xl text-xs space-y-1">
+              <div class="font-bold text-white">5. Don't Drink Alcohol on Weeknights</div>
+              <div class="text-slate-300">Never use alcohol to decompress before work or court meetings. Strict cap: maximum 1 session per fortnight.</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TAB 7: 90-DAY SCORECARD -->
+    <section id="content-scorecard" class="tab-content hidden space-y-6">
+      
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-6">
+          <div>
+            <h2 class="text-xl font-bold text-white">90-Day Execution Scorecard</h2>
+            <p class="text-slate-400 text-sm">Review Milestone: <strong>January 31, 2027</strong>. Click checkboxes to track real-world progress.</p>
+          </div>
+          <div class="text-xs bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-300 font-semibold" id="scorecard-progress">
+            0 of 8 Deliverables Completed (0%)
+          </div>
+        </div>
+
+        <div class="space-y-3" id="scorecard-list">
+          
+          <div class="flex items-center justify-between p-4 bg-slate-800/50 border border-slate-700/80 rounded-xl hover:bg-slate-800 transition cursor-pointer" onclick="toggleTask(0)">
+            <div class="flex items-center gap-3.5">
+              <input type="checkbox" id="task-0" class="w-5 h-5 rounded bg-slate-700 border-slate-600 text-indigo-500 focus:ring-indigo-500">
+              <div>
+                <div class="text-sm font-bold text-white">Body Weight: Drop to ≤ 94 kg</div>
+                <div class="text-xs text-slate-400">Current: 100 kg • Visceral fat reduction • Logged in `lifeos-hq/02-health/WEIGHT_LOG.md`</div>
+              </div>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-700 text-slate-300 font-semibold task-status">PENDING</span>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-slate-800/50 border border-slate-700/80 rounded-xl hover:bg-slate-800 transition cursor-pointer" onclick="toggleTask(1)">
+            <div class="flex items-center gap-3.5">
+              <input type="checkbox" id="task-1" class="w-5 h-5 rounded bg-slate-700 border-slate-600 text-indigo-500 focus:ring-indigo-500">
+              <div>
+                <div class="text-sm font-bold text-white">Sleep Reset: In bed by 12:30 AM (5 nights/week)</div>
+                <div class="text-xs text-slate-400">Baseline: 4:00 AM – 5:00 AM • No phone past 11:30 PM</div>
+              </div>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-700 text-slate-300 font-semibold task-status">PENDING</span>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-slate-800/50 border border-slate-700/80 rounded-xl hover:bg-slate-800 transition cursor-pointer" onclick="toggleTask(2)">
+            <div class="flex items-center gap-3.5">
+              <input type="checkbox" id="task-2" class="w-5 h-5 rounded bg-slate-700 border-slate-600 text-indigo-500 focus:ring-indigo-500">
+              <div>
+                <div class="text-sm font-bold text-white">Smoking Cessation: ≤ 2/day via medical taper</div>
+                <div class="text-xs text-slate-400">Baseline: 6–7/day • Doctor consultation + NRT patches</div>
+              </div>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-700 text-slate-300 font-semibold task-status">PENDING</span>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-slate-800/50 border border-slate-700/80 rounded-xl hover:bg-slate-800 transition cursor-pointer" onclick="toggleTask(3)">
+            <div class="flex items-center gap-3.5">
+              <input type="checkbox" id="task-3" class="w-5 h-5 rounded bg-slate-700 border-slate-600 text-indigo-500 focus:ring-indigo-500">
+              <div>
+                <div class="text-sm font-bold text-white">EPAM Architect Promotion Dossier Submitted & Ratified</div>
+                <div class="text-xs text-slate-400">Submission: Mid-Nov • Panel completed • Compensation confirmed</div>
+              </div>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-700 text-slate-300 font-semibold task-status">PENDING</span>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-slate-800/50 border border-slate-700/80 rounded-xl hover:bg-slate-800 transition cursor-pointer" onclick="toggleTask(4)">
+            <div class="flex items-center gap-3.5">
+              <input type="checkbox" id="task-4" class="w-5 h-5 rounded bg-slate-700 border-slate-600 text-indigo-500 focus:ring-indigo-500">
+              <div>
+                <div class="text-sm font-bold text-white">Matrimonial Asset Deck Staged for Feb 2027</div>
+                <div class="text-xs text-slate-400">Professional portrait photoshoot + 1-page values criteria deck</div>
+              </div>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-700 text-slate-300 font-semibold task-status">PENDING</span>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-slate-800/50 border border-slate-700/80 rounded-xl hover:bg-slate-800 transition cursor-pointer" onclick="toggleTask(5)">
+            <div class="flex items-center gap-3.5">
+              <input type="checkbox" id="task-5" class="w-5 h-5 rounded bg-slate-700 border-slate-600 text-indigo-500 focus:ring-indigo-500">
+              <div>
+                <div class="text-sm font-bold text-white">Sister's Legal Case Professionalized & Siloed</div>
+                <div class="text-xs text-slate-400">Fixed-fee agreement with specialist • Papers digitized • Sat 10am-12pm slot only</div>
+              </div>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-700 text-slate-300 font-semibold task-status">PENDING</span>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-slate-800/50 border border-slate-700/80 rounded-xl hover:bg-slate-800 transition cursor-pointer" onclick="toggleTask(6)">
+            <div class="flex items-center gap-3.5">
+              <input type="checkbox" id="task-6" class="w-5 h-5 rounded bg-slate-700 border-slate-600 text-indigo-500 focus:ring-indigo-500">
+              <div>
+                <div class="text-sm font-bold text-white">LAMF Overdraft Pre-Sanctioned with 25% LTV Cap</div>
+                <div class="text-xs text-slate-400">Zero drawn until legal title cleared • Facility ready for vendor invoices</div>
+              </div>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-700 text-slate-300 font-semibold task-status">PENDING</span>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-slate-800/50 border border-slate-700/80 rounded-xl hover:bg-slate-800 transition cursor-pointer" onclick="toggleTask(7)">
+            <div class="flex items-center gap-3.5">
+              <input type="checkbox" id="task-7" class="w-5 h-5 rounded bg-slate-700 border-slate-600 text-indigo-500 focus:ring-indigo-500">
+              <div>
+                <div class="text-sm font-bold text-white">Nivora Product #1 (Budget Planner) Published</div>
+                <div class="text-xs text-slate-400">Live Gumroad / Payhip link recorded • Unblock first $50 digital revenue</div>
+              </div>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-700 text-slate-300 font-semibold task-status">PENDING</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(el => {
+        el.classList.remove('active-tab');
+        el.classList.add('text-slate-400');
+      });
+
+      const activeContent = document.getElementById('content-' + tabId);
+      const activeBtn = document.getElementById('tab-' + tabId);
+      if (activeContent) activeContent.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.add('active-tab');
+        activeBtn.classList.remove('text-slate-400');
+      }
+    }
+
+    function calculateLAMF() {
+      const portfolio = parseFloat(document.getElementById('portfolio-slider').value);
+      const loan = parseFloat(document.getElementById('loan-slider').value);
+
+      document.getElementById('portfolio-val-display').innerText = '₹' + (portfolio / 100000).toFixed(1) + ' Lakhs';
+      document.getElementById('loan-val-display').innerText = '₹' + (loan / 100000).toFixed(1) + ' Lakhs';
+
+      const ltv = (loan / portfolio) * 100;
+      const ltvEl = document.getElementById('ltv-display');
+      const badgeEl = document.getElementById('ltv-status-badge');
+
+      ltvEl.innerText = ltv.toFixed(1) + '%';
+
+      if (ltv <= 25) {
+        ltvEl.className = 'text-3xl font-black mt-1 text-emerald-400';
+        badgeEl.className = 'text-xs mt-1 text-emerald-400 font-semibold';
+        badgeEl.innerText = 'Safe Zone (Under 25% Cap)';
+      } else if (ltv <= 40) {
+        ltvEl.className = 'text-3xl font-black mt-1 text-amber-400';
+        badgeEl.className = 'text-xs mt-1 text-amber-400 font-semibold';
+        badgeEl.innerText = 'Caution Zone (Approaching 40%)';
+      } else {
+        ltvEl.className = 'text-3xl font-black mt-1 text-rose-400';
+        badgeEl.className = 'text-xs mt-1 text-rose-400 font-semibold';
+        badgeEl.innerText = 'DANGER ZONE (Near 50% Margin Call)';
+      }
+
+      const safeLimit = portfolio * 0.25;
+      document.getElementById('safe-limit-display').innerText = '₹' + (safeLimit / 100000).toFixed(1) + ' Lakhs';
+
+      // Drop needed to hit 50% LTV:
+      // loan / (portfolio * (1 - drop)) = 0.50 => 1 - drop = loan / (0.5 * portfolio) => drop = 1 - (loan / (0.5 * portfolio))
+      const marginPortVal = loan / 0.50;
+      const dropPct = ((portfolio - marginPortVal) / portfolio) * 100;
+
+      const dropEl = document.getElementById('crash-tolerance-display');
+      if (dropPct > 0) {
+        dropEl.innerText = '-' + dropPct.toFixed(1) + '%';
+        dropEl.className = dropPct >= 30 ? 'text-3xl font-black text-emerald-400 mt-1' : 'text-3xl font-black text-amber-400 mt-1';
+      } else {
+        dropEl.innerText = '0.0%';
+        dropEl.className = 'text-3xl font-black text-rose-400 mt-1';
+      }
+
+      renderStressTable(portfolio, loan);
+    }
+
+    function renderStressTable(portfolio, loan) {
+      const scenarios = [
+        { label: 'Normal / Bull (+8%)', drop: 0.08 },
+        { label: 'Mild Correction (-10%)', drop: -0.10 },
+        { label: 'Moderate Bear (-20%)', drop: -0.20 },
+        { label: 'Severe Crash (-30%)', drop: -0.30 },
+        { label: 'Black Swan (-40%)', drop: -0.40 }
+      ];
+
+      const tbody = document.getElementById('stress-table-body');
+      tbody.innerHTML = '';
+
+      scenarios.forEach(sc => {
+        const newPort = portfolio * (1 + sc.drop);
+        const newLtv = (loan / newPort) * 100;
+        let statusBadge = '';
+
+        if (newLtv < 30) {
+          statusBadge = '<span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-semibold text-xs">Safe • No Action</span>';
+        } else if (newLtv < 45) {
+          statusBadge = '<span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-semibold text-xs">Caution • Monitor</span>';
+        } else if (newLtv < 50) {
+          statusBadge = '<span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 font-semibold text-xs">WARNING • Near Margin Call</span>';
+        } else {
+          statusBadge = '<span class="px-2 py-0.5 rounded bg-red-600 text-white font-bold text-xs animate-pulse">FORCED LIQUIDATION (LTV > 50%)</span>';
+        }
+
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-800/40 transition';
+        tr.innerHTML = `
+          <td class="p-3 font-semibold text-white">${sc.label}</td>
+          <td class="p-3">₹${(newPort / 100000).toFixed(1)}L</td>
+          <td class="p-3 text-sky-400 font-semibold">₹${(loan / 100000).toFixed(1)}L</td>
+          <td class="p-3 font-bold ${newLtv >= 48 ? 'text-rose-400' : 'text-slate-200'}">${newLtv.toFixed(1)}%</td>
+          <td class="p-3">${statusBadge}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Scorecard Interactive State
+    let taskState = JSON.parse(localStorage.getItem('life_audit_tasks') || '[false, false, false, false, false, false, false, false]');
+
+    function initScorecard() {
+      taskState.forEach((done, idx) => {
+        const checkbox = document.getElementById('task-' + idx);
+        if (checkbox) checkbox.checked = done;
+        updateTaskStatus(idx, done);
+      });
+      updateScorecardCounter();
+    }
+
+    function toggleTask(idx) {
+      taskState[idx] = !taskState[idx];
+      const checkbox = document.getElementById('task-' + idx);
+      if (checkbox) checkbox.checked = taskState[idx];
+      updateTaskStatus(idx, taskState[idx]);
+      localStorage.setItem('life_audit_tasks', JSON.stringify(taskState));
+      updateScorecardCounter();
+    }
+
+    function updateTaskStatus(idx, done) {
+      const container = document.getElementById('task-' + idx)?.closest('.flex');
+      const badge = container?.querySelector('.task-status');
+      if (badge) {
+        if (done) {
+          badge.innerText = 'DONE ✓';
+          badge.className = 'text-xs px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 font-bold task-status';
+        } else {
+          badge.innerText = 'PENDING';
+          badge.className = 'text-xs px-2.5 py-1 rounded bg-slate-700 text-slate-300 font-semibold task-status';
+        }
+      }
+    }
+
+    function updateScorecardCounter() {
+      const doneCount = taskState.filter(Boolean).length;
+      const total = taskState.length;
+      const pct = Math.round((doneCount / total) * 100);
+      document.getElementById('scorecard-progress').innerText = `${doneCount} of ${total} Deliverables Completed (${pct}%)`;
+    }
+
+    // Initialize on load
+    window.addEventListener('DOMContentLoaded', () => {
+      calculateLAMF();
+      initScorecard();
+    });
+  </script>
+</body>
+</html>
+

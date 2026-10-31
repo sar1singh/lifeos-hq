@@ -59,6 +59,24 @@ Increase odds + upside.
 
 ---
 
+## 2026-10-31
+Decision: Reject low-ticket freelance AI services; lock focus onto ThinkLate media IP compounding and Enterprise GenAI Architecture.
+Reason: Freelance AI ads/websites provide low-margin active labor (₹20k-40k) that distracts from ₹6.5–7.5 Cr net worth goal and drains cognitive energy. Audience from ThinkLate must precede micro-SaaS.
+
+---
+
+## 2026-10-31
+Decision: Standardize HimanshuG Retention Laws (3s state change, pre-emptive J-cut SFX, 8% film grain) across all channels.
+Reason: Eliminates faceless channel "wallpaper syndrome" and grounds generative visuals in physical reality.
+
+---
+
+## 2026-10-31
+Decision: Establish LifeOS as the Hermes Persistent Memory & Cross-Session Audit Bank (Rule 18 in AGENTS.md).
+Reason: Preserves cross-repo context, strategic pivots, and daily founder journal entries automatically without human prompting.
+
+---
+
 # FUTURE DECISIONS TEMPLATE
 
 ## YYYY-MM-DD

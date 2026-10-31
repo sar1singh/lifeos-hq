@@ -1,0 +1,299 @@
+{
+  "birth_parameters": {
+    "dob": "1990-09-17",
+    "tob": "13:12:00",
+    "timezone": "+05:30",
+    "location": "Ghaziabad, UP, India",
+    "coordinates": {
+      "lat": 28.6692,
+      "lon": 77.4538
+    },
+    "ayanamsha": "Lahiri",
+    "ayanamsha_value": 23.727324
+  },
+  "planetary_positions": {
+    "Ascendant": {
+      "sign": "Sagittarius",
+      "longitude": 241.929863,
+      "sign_degrees": 1.929863,
+      "nakshatra": "Mula",
+      "pada": 1
+    },
+    "Sun": {
+      "sign": "Virgo",
+      "longitude": 150.435649,
+      "sign_degrees": 0.435649,
+      "nakshatra": "Uttaraphalguni",
+      "pada": 2,
+      "retrograde": false
+    },
+    "Moon": {
+      "sign": "Leo",
+      "longitude": 129.794606,
+      "sign_degrees": 9.794606,
+      "nakshatra": "Magha",
+      "pada": 3,
+      "retrograde": false
+    },
+    "Mars": {
+      "sign": "Taurus",
+      "longitude": 43.758682,
+      "sign_degrees": 13.758682,
+      "nakshatra": "Rohini",
+      "pada": 2,
+      "retrograde": false
+    },
+    "Mercury": {
+      "sign": "Leo",
+      "longitude": 135.861672,
+      "sign_degrees": 15.861672,
+      "nakshatra": "Purvaphalguni",
+      "pada": 1,
+      "retrograde": true
+    },
+    "Jupiter": {
+      "sign": "Cancer",
+      "longitude": 102.233469,
+      "sign_degrees": 12.233469,
+      "nakshatra": "Pushya",
+      "pada": 3,
+      "retrograde": false
+    },
+    "Venus": {
+      "sign": "Leo",
+      "longitude": 138.618775,
+      "sign_degrees": 18.618775,
+      "nakshatra": "Purvaphalguni",
+      "pada": 2,
+      "retrograde": false
+    },
+    "Saturn": {
+      "sign": "Sagittarius",
+      "longitude": 265.001803,
+      "sign_degrees": 25.001803,
+      "nakshatra": "Purvashadha",
+      "pada": 4,
+      "retrograde": true
+    },
+    "Rahu": {
+      "sign": "Capricorn",
+      "longitude": 280.998831,
+      "sign_degrees": 10.998831,
+      "nakshatra": "Shravana",
+      "pada": 1,
+      "retrograde": true
+    },
+    "Ketu": {
+      "sign": "Cancer",
+      "longitude": 100.998831,
+      "sign_degrees": 10.998831,
+      "nakshatra": "Pushya",
+      "pada": 3,
+      "retrograde": true
+    }
+  },
+  "houses_chalit": {
+    "1": {
+      "sign": "Sagittarius",
+      "mid_bhav_longitude": 241.929863,
+      "mid_bhav_sign_degrees": 1.929863,
+      "bhav_begin_sign": "Scorpio",
+      "bhav_begin_longitude": 229.274583,
+      "bhav_begin_sign_degrees": 19.274583,
+      "bhav_end_longitude": 259.274583
+    },
+    "2": {
+      "sign": "Capricorn",
+      "mid_bhav_longitude": 276.619303,
+      "mid_bhav_sign_degrees": 6.619303,
+      "bhav_begin_sign": "Sagittarius",
+      "bhav_begin_longitude": 259.274583,
+      "bhav_begin_sign_degrees": 19.274583,
+      "bhav_end_longitude": 293.964022
+    },
+    "3": {
+      "sign": "Aquarius",
+      "mid_bhav_longitude": 311.308742,
+      "mid_bhav_sign_degrees": 11.308742,
+      "bhav_begin_sign": "Capricorn",
+      "bhav_begin_longitude": 293.964022,
+      "bhav_begin_sign_degrees": 23.964022,
+      "bhav_end_longitude": 328.653462
+    },
+    "4": {
+      "sign": "Pisces",
+      "mid_bhav_longitude": 345.998182,
+      "mid_bhav_sign_degrees": 15.998182,
+      "bhav_begin_sign": "Aquarius",
+      "bhav_begin_longitude": 328.653462,
+      "bhav_begin_sign_degrees": 28.653462,
+      "bhav_end_longitude": 358.653462
+    },
+    "5": {
+      "sign": "Aries",
+      "mid_bhav_longitude": 11.308742,
+      "mid_bhav_sign_degrees": 11.308742,
+      "bhav_begin_sign": "Pisces",
+      "bhav_begin_longitude": 358.653462,
+      "bhav_begin_sign_degrees": 28.653462,
+      "bhav_end_longitude": 23.964022
+    },
+    "6": {
+      "sign": "Taurus",
+      "mid_bhav_longitude": 36.619303,
+      "mid_bhav_sign_degrees": 6.619303,
+      "bhav_begin_sign": "Aries",
+      "bhav_begin_longitude": 23.964022,
+      "bhav_begin_sign_degrees": 23.964022,
+      "bhav_end_longitude": 49.274583
+    },
+    "7": {
+      "sign": "Gemini",
+      "mid_bhav_longitude": 61.929863,
+      "mid_bhav_sign_degrees": 1.929863,
+      "bhav_begin_sign": "Taurus",
+      "bhav_begin_longitude": 49.274583,
+      "bhav_begin_sign_degrees": 19.274583,
+      "bhav_end_longitude": 79.274583
+    },
+    "8": {
+      "sign": "Cancer",
+      "mid_bhav_longitude": 96.619303,
+      "mid_bhav_sign_degrees": 6.619303,
+      "bhav_begin_sign": "Gemini",
+      "bhav_begin_longitude": 79.274583,
+      "bhav_begin_sign_degrees": 19.274583,
+      "bhav_end_longitude": 113.964022
+    },
+    "9": {
+      "sign": "Leo",
+      "mid_bhav_longitude": 131.308742,
+      "mid_bhav_sign_degrees": 11.308742,
+      "bhav_begin_sign": "Cancer",
+      "bhav_begin_longitude": 113.964022,
+      "bhav_begin_sign_degrees": 23.964022,
+      "bhav_end_longitude": 148.653462
+    },
+    "10": {
+      "sign": "Virgo",
+      "mid_bhav_longitude": 165.998182,
+      "mid_bhav_sign_degrees": 15.998182,
+      "bhav_begin_sign": "Leo",
+      "bhav_begin_longitude": 148.653462,
+      "bhav_begin_sign_degrees": 28.653462,
+      "bhav_end_longitude": 178.653462
+    },
+    "11": {
+      "sign": "Libra",
+      "mid_bhav_longitude": 191.308742,
+      "mid_bhav_sign_degrees": 11.308742,
+      "bhav_begin_sign": "Virgo",
+      "bhav_begin_longitude": 178.653462,
+      "bhav_begin_sign_degrees": 28.653462,
+      "bhav_end_longitude": 203.964022
+    },
+    "12": {
+      "sign": "Scorpio",
+      "mid_bhav_longitude": 216.619303,
+      "mid_bhav_sign_degrees": 6.619303,
+      "bhav_begin_sign": "Libra",
+      "bhav_begin_longitude": 203.964022,
+      "bhav_begin_sign_degrees": 23.964022,
+      "bhav_end_longitude": 229.274583
+    }
+  },
+  "navamsha_d9": {
+    "Ascendant": {
+      "sign": "Aries",
+      "navamsha_house": 1
+    },
+    "Sun": {
+      "sign": "Capricorn",
+      "vargottama": false
+    },
+    "Moon": {
+      "sign": "Gemini",
+      "vargottama": false
+    },
+    "Mars": {
+      "sign": "Taurus",
+      "vargottama": true
+    },
+    "Mercury": {
+      "sign": "Leo",
+      "vargottama": true
+    },
+    "Jupiter": {
+      "sign": "Libra",
+      "vargottama": false
+    },
+    "Venus": {
+      "sign": "Virgo",
+      "vargottama": false
+    },
+    "Saturn": {
+      "sign": "Scorpio",
+      "vargottama": false
+    },
+    "Rahu": {
+      "sign": "Aries",
+      "vargottama": false
+    },
+    "Ketu": {
+      "sign": "Libra",
+      "vargottama": false
+    }
+  },
+  "dashas": {
+    "mahadasha_active": "Moon",
+    "start": "2018-07-27",
+    "end": "2028-07-27",
+    "sub_periods": [
+      {
+        "lord": "Moon",
+        "start": "2018-07-27",
+        "end": "2019-05-27"
+      },
+      {
+        "lord": "Mars",
+        "start": "2019-05-27",
+        "end": "2019-12-27"
+      },
+      {
+        "lord": "Rahu",
+        "start": "2019-12-27",
+        "end": "2021-06-27"
+      },
+      {
+        "lord": "Jupiter",
+        "start": "2021-06-27",
+        "end": "2022-10-27"
+      },
+      {
+        "lord": "Saturn",
+        "start": "2022-10-27",
+        "end": "2024-05-27"
+      },
+      {
+        "lord": "Mercury",
+        "start": "2024-05-27",
+        "end": "2025-10-27"
+      },
+      {
+        "lord": "Ketu",
+        "start": "2025-10-27",
+        "end": "2026-05-27"
+      },
+      {
+        "lord": "Venus",
+        "start": "2026-05-27",
+        "end": "2028-01-27"
+      },
+      {
+        "lord": "Sun",
+        "start": "2028-01-27",
+        "end": "2028-07-27"
+      }
+    ]
+  }
+}
