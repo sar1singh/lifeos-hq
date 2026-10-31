@@ -16,7 +16,7 @@ Format:
 
 ---
 
-## 2026-11-01 (Shared Motion Engine Centralization, 32-Template Suite & Multi-Agent Architecture)
+## 2026-11-01 (Shared Motion Engine Centralization, 36-Template Elite Documentary Suite & Automated Batch Video Production Pipeline)
 - **Focus:** Universal Multi-Channel Motion Graphics Architecture, Zero-Static Frame Enforcement, Hermes/Paperclip Local Orchestration Blueprint.
 - **Strategic Decisions Locked:**
   - **Shared Motion Engine Centralization (Rule 23 in AGENTS.md):** Permanently eliminated duplicate Remotion folders. Centralized the entire motion engine in `digital-lab/03-content-lab/shared/motion_engine/` and created universal bridge `.agents/tools/render_motion.py`. Accessible universally across `thinklate`, `offscript`, `sarwanology`, and digital utilities with instant brand theming (`--props '{"channel": "..."}'`).
@@ -34,7 +34,11 @@ Format:
     - *Paperclip:* Asynchronous CEO Mission Control Board (`localhost:3000`), managing tickets, token budgets, and scheduled heartbeats so multiple parallel initiatives don't cause cognitive thrashing.
     - *Antigravity:* Master execution engine and IDE pair programmer executing coding, video rendering, and git operations.
 - **Wins:**
-  - Multi-layer 4-second video composite verified: `demo_multilayer_stack_video.mp4` and `demo_multilayer_stack_snapshot.png`.
+  - Solved true-motion alpha rendering via Apple ProRes 4444 (`.mov`), eliminating the static frame looping bug.
+  - Added 4 iconic documentary templates: `MagnifyingGlassDoc` (Nitish Rajput loupe + yellow highlighter + rubber stamp), `CharacterProfileCard` (founder dossier + stats), `RankedListicleCard` (Alux gold numeral + laser line), `ConspiracyPinBoard` (Vox corkboard + red string). Total catalog expanded to 36 templates.
+  - Built automated batch production engine: `batch_produce_video.py` and universal bridge `.agents/tools/batch_produce_video.py`.
+  - Verified 4 new true-motion demo videos with 3-frame progressive snapshots: `demo_magnifying_glass_doc.mp4`, `demo_character_profile_card.mp4`, `demo_ranked_listicle_card.mp4`, `demo_conspiracy_pin_board.mp4`.
+  - Assembled and verified 11.5s multi-cue master: `demo_batch_production_master.mp4` (7.54 MB) with dynamic focus blur and 4 progressive verification snapshots.
   - Informed and updated all 6 agent skill definitions (`video-editor`, `off-script-director`, `thinklate-designer`, `thinklate-ceo`, `video-editor-qc`, `packaging-director`).
   - Master documents updated: `THINKLATE_BROADCAST_ANIMATION_CATALOG.md` (32 templates) and `HERMES_PAPERCLIP_LOCAL_ORCHESTRATION_BLUEPRINT.md`.
   - Maintained 100% strict isolation for Video 05 (`05_how-airbnb-stole-100b/` untouched).
