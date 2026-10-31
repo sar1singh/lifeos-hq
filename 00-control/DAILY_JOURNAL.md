@@ -22,6 +22,9 @@ Format:
 - **Strategic Decisions Locked:**
   - **Video Runtime Cap Law (From Video 06 Onwards):** Strict ceiling of **8–10 minutes** (1,200–1,500 words). 18 minutes (~3,000 words, ~400 visual cues) causes visual storytelling fatigue and production bottlenecks on free/accessible stacks. 8–10 minutes hits the YouTube sweet spot for maximum average percentage viewed (APV), tighter narrative density, and a sustainable weekly shipping cadence.
   - **The Conversational Tone & Anti-PPT Law:** Shorter runtime (6–8 to 8–10 min) is strictly for narrative compression, NEVER an excuse to revert to corporate bullet-points or office PPT tone. ThinkLate is conversational infotainment: witty, satirical, high-curiosity, first-person late-night banter dismantling dogmas with Sumeet Jain wit and HimanshuG pacing.
+  - **Real Founder Grounding Law:** Permanently banned generic generative AI faces for real historical figures. All documented founders (Chesky, Gebbia, Blecharczyk, Paul Graham) must strictly use authentic historical archival photographs to prevent AI gender/appearance hallucinations.
+  - **Zero Camera Shake Law:** Permanently banned simulated camera shake, tremor effects, and jittery zoom filters. Camera movement must strictly be rock-solid, dead-steady, cinematic smooth slow zoom in/out or stable static framing.
+  - **Center-Screen Progressive Typography Rule:** Typography in hooks must NEVER sit at the bottom edge. Must be placed dead-center in the viewer eye line with sequential stacking (Line 1 pops -> Line 2 stacks -> Line 3 stacks) to lock mobile watch-time retention.
   - **Free Sovereign Visual Pipeline (Anti-Billing Law):** Bypassed GCP Vertex AI billing gate. Standardized free 4-tier visual waterfall: Pexels/Pixabay HD/4K stock video (Tier 1), living 60fps gameplay canvas spine on Track 1 (Tier 2), Antigravity native subagent 16:9 photorealistic plates with 2.5D Ken Burns push (Tier 3), DaVinci Text+ kinetic typography (Tier 4), and Flourish/Python animated MP4 data charts.
   - **Content-Led Micro-SaaS (Manu Arora Model):** Audience (ThinkLate) must precede micro-SaaS utilities.
   - **The HimanshuG Faceless Retention Engine:** Injected across `storytelling-script-qc`, `thinklate-designer`, `video-editor`, and `off-script-director` (3-second visual state change, pre-emptive J-cut SFX, 8% film grain anti-AI grounding).
@@ -144,4 +147,14 @@ Format:
     1. **Demote AI to Logic & Narrative Only:** Restrict LLMs strictly to script dramaturgy, fact-checking, and narrative pacing where they actually provide leverage.
     2. **Permanently Strip Visual Creative Freedom from AI:** Zero generative visual cards, zero AI-improvised color palettes. All visual aesthetics must be anchored in locked, human-curated design systems (Swiss Brutalist minimalism, high-end vector DaVinci templates, real archival documentary plates, and the curated gameplay canvas).
     3. **Stop the Bleed:** If a pipeline stage requires constant babysitting, prompt tweaking, and token burn for mediocre visual results, kill the automated generation of that stage immediately. Automate only the deterministic mechanics (Whisper alignment, video stitching, audio mixing); curate the visual taste manually or through locked static asset libraries.
+
+- **ThinkLate Autonomous Pipeline Hardening & Retro Synthesis (11:20 PM):**
+  - **Retro Feedback Captured from Video 05 Production:**
+    1. *Visual-Voice Disconnect (Paivio's Law Failure):* Spoken voiceover (rent, eviction, bank balances) must strictly match on-screen visuals in real time. Primary contextual evidence cards must appear in lockstep with spoken keywords.
+    2. *Visual Dead-Air Cap (<=3.5s):* Never hold static frames for >3.5s. Track 1 moving gameplay (`ACBF_Gameplay_2.mp4`) acts as living filler; Track 2 scoped blur isolates attention during card displays.
+    3. *The Modern AI Faceless Stack Benchmarked:* Channels that thrive (Varun Mayya, Srishti, Julio) use code-defined motion engines (Remotion/React) and distinct avatar presence.
+    4. *Windows Headless Subprocess Standard:* Zero console window popups (`SW_HIDE` + `CREATE_NO_WINDOW`) across all background tools.
+  - **Action Decisions:**
+    - Deployed Remotion-based motion engine in `thinklate/tools/motion_engine` for glassmorphic evidence cards, kinetic typography slams, and spring-animated counters.
+    - Parallel execution strategy: Video 05 proceeds in its dedicated session; this session architects the permanent, unified pipeline tools and algorithmic channel revival framework.
 
