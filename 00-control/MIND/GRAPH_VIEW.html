@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MIND Graph — 8 Nodes | sar1s</title>
+<title>MIND Graph — 9 Nodes | sar1s</title>
 <style>
   :root{--bg:#080C14;--surf:#0F1626;--card:#141D30;--bdr:#1E2C48;--txt:#F1F5F9;--muted:#64748B;--dim:#94A3B8;--gold:#F59E0B;--cyan:#06B6D4;}
   *{box-sizing:border-box;margin:0;padding:0;}
@@ -38,7 +38,7 @@
 <body>
 <header>
   <div class="brand">&#127893; MIND Graph</div>
-  <div class="stats" id="stat-bar">Nodes: 8 &nbsp;|&nbsp; Edges: 14 &nbsp;|&nbsp; Click a node to inspect</div>
+  <div class="stats" id="stat-bar">Nodes: 9 &nbsp;|&nbsp; Edges: 18 &nbsp;|&nbsp; Click a node to inspect</div>
 </header>
 <div class="main">
   <svg id="graph"></svg>
@@ -285,6 +285,40 @@ const GRAPH = {
       "thought": "Avoid Tutorial Island and research rabbit holes (Sage/PyTorch model training). Position strictly as an AI Systems Architect (Alchemist/Crafter)\u2014orchestrating deterministic agent pipelines, context eng",
       "color": "#10B981",
       "opacity": 1.0
+    },
+    {
+      "id": "N010",
+      "title": "Core Engine First & 80/20 Adjacent Income Over Starting Content From Scratch",
+      "type": "INSPIRATION",
+      "status": "ACTIONABLE",
+      "tags": [
+        "adjacent-income",
+        "core-engine",
+        "leverage",
+        "career",
+        "software-architecture",
+        "ai-systems",
+        "wealth-stack",
+        "youtube"
+      ],
+      "created": "2026-11-18",
+      "connects_to": [
+        "N001",
+        "N004",
+        "N006",
+        "N009"
+      ],
+      "edge_types": {
+        "N001": "EXTENDS",
+        "N004": "CONTRADICTS",
+        "N006": "EXTENDS",
+        "N009": "SUPPORTS"
+      },
+      "repo_target": "engineering-foundations/ | digital-lab/ | agent-os/",
+      "cluster": "C001",
+      "thought": "\"that adjacent income, I am still watching the full video but in parallel. evalaute this video first. what other 5 pillars or process he mentioned and what immediate implementation can be done in next",
+      "color": "#06B6D4",
+      "opacity": 1.0
     }
   ],
   "links": [
@@ -371,6 +405,30 @@ const GRAPH = {
       "target": "N005",
       "type": "EXTENDS",
       "color": "#06B6D4"
+    },
+    {
+      "source": "N010",
+      "target": "N001",
+      "type": "EXTENDS",
+      "color": "#06B6D4"
+    },
+    {
+      "source": "N010",
+      "target": "N004",
+      "type": "CONTRADICTS",
+      "color": "#EF4444"
+    },
+    {
+      "source": "N010",
+      "target": "N006",
+      "type": "EXTENDS",
+      "color": "#06B6D4"
+    },
+    {
+      "source": "N010",
+      "target": "N009",
+      "type": "SUPPORTS",
+      "color": "#10B981"
     }
   ]
 };

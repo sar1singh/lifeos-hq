@@ -1,6 +1,6 @@
 # MIND GRAPH — Master Index
 *Cognitive layer of lifeos-hq. AI-readable. Session-persistent.*
-*Last synthesis: 2026-09-24 | Total nodes: 6 | Total edges: 9 | Clusters: 1 | Visions: 0*
+*Last synthesis: 2026-11-18 | Total nodes: 10 | Total edges: 23 | Clusters: 1 | Visions: 0*
 
 ---
 
@@ -23,6 +23,8 @@
 | N006 | Polymath identity & ThinkLate as explanatory umbrella | INSIGHT | MATURE | identity, polymath, thinklate, storytelling, synthesis | N001, N004, N005 |
 | N007 | Prototype-First Architecture: UI Designer + Product Agents | INSIGHT | ACTIONABLE | agents, product, ui-ux, prototyping, hermes, paperclip | N001, N005, N006 |
 | N008 | Council of Specialized Mentors & Meta-Triage Dispatcher | INSIGHT | ACTIONABLE | psychology, mentors, meta-agent, overwhelm, polymath, triage | N001, N005, N006, N007 |
+| N009 | AI Systems Architect & Alchemist Positioning Over Tutorial Hell | INSIGHT | ACTIONABLE | ai, engineering, architecture, roadmap, agent-os, digital-lab, mindset | N001, N005, N007 |
+| N010 | Core Engine First & 80/20 Adjacent Income Over Starting Content From Scratch | INSPIRATION | ACTIONABLE | adjacent-income, core-engine, leverage, career, software-architecture, ai-systems, wealth-stack, youtube | N001, N004, N006, N009 |
 
 ---
 
@@ -46,6 +48,13 @@
 | N008 | N001 | EXTENDS | Maps the 5 mentors directly to the 5 interconnected repos |
 | N008 | N006 | SUPPORTS | Eliminates cognitive thrashing and multi-interest paralysis for the polymath |
 | N008 | N007 | EXTENDS | Provides the meta-triage dispatcher layer above product and design agents |
+| N009 | N001 | EXTENDS | Positions enterprise AI Systems Architecture inside the interconnected workspace |
+| N009 | N005 | EXTENDS | Validates deterministic multi-agent orchestration over manual execution |
+| N009 | N007 | SUPPORTS | Reinforces craft/systems pipelines in agent-os over tutorial-hell ML training |
+| N010 | N001 | EXTENDS | Connects Core Engine + Adjacent Income sequence directly across existing workspace repos |
+| N010 | N004 | CONTRADICTS | Challenges starting parallel zero-leverage content bets from scratch vs. 80/20 Core Engine adjacency |
+| N010 | N006 | EXTENDS | Channels polymath synthesis through proven technical/architectural capability first |
+| N010 | N009 | SUPPORTS | Anchors 80/20 adjacent monetization directly in AI Systems & Backend Cloud Architecture |
 
 ---
 
@@ -67,10 +76,10 @@
 
 ## Graph Statistics
 
-- Highest connected node: N001 (6 edges incoming/related), N005 (5 edges), N006 (4 edges), N008 (4 edges)
-- Most recent node: N008
+- Highest connected node: N001 (8 edges incoming/related), N005 (6 edges), N006 (5 edges), N007 (4 edges), N008 (4 edges), N010 (4 edges)
+- Most recent node: N010
 - Orphan nodes (no connections): 0
-- Last synthesis run: 2026-10-30
+- Last synthesis run: 2026-11-18
 
 ---
 
@@ -85,6 +94,8 @@ N005: [N001:EXTENDS, N004:SUPPORTS]
 N006: [N001:EXTENDS, N004:SUPPORTS, N005:SUPPORTS]
 N007: [N005:EXTENDS, N001:SUPPORTS, N006:SUPPORTS]
 N008: [N005:EXTENDS, N001:EXTENDS, N006:SUPPORTS, N007:EXTENDS]
+N009: [N001:EXTENDS, N005:EXTENDS, N007:SUPPORTS]
+N010: [N001:EXTENDS, N004:CONTRADICTS, N006:EXTENDS, N009:SUPPORTS]
 ```
 
 ---
@@ -99,6 +110,7 @@ N008: [N005:EXTENDS, N001:EXTENDS, N006:SUPPORTS, N007:EXTENDS]
 *2026-09-24 — N007 added: Prototype-first multi-agent architecture (Product + UI Designer).*
 *2026-09-24 — Cluster C001 formed: The Polymath Systems Architecture (Signal 8/10). Candidate Vision V001 surfaced.*
 *2026-10-30 — N008 added: Council of Specialized Mentors & Meta-Triage Dispatcher. Directly addresses acute cognitive context-thrashing and paralysis. Cluster C001 signal upgraded to 9/10.*
+*2026-11-18 — N009 synced + N010 added: Audited Parth Oshan's Core Engine -> 80/20 Adjacent Income -> Leverage -> Capital sequence (`2NxbWmhFBWU`). Exposed misallocation between zero-leverage content building vs. immediate Core Engine / B2B AI-Architecture monetization.*
 
 
 
